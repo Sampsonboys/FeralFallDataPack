@@ -1,0 +1,495 @@
+
+ran:
+  command: /ran
+  type: ALIAS
+  alias: /random
+  permission-required: false
+  register: true
+  
+deathroll:
+  command: /deathroll
+  type: RUN_CONSOLE_RANDOM
+  runcmd:
+  - /execute as $player at @s run function joshtiger:commands/-deathroll/death
+  - /execute as $player at @s run function joshtiger:commands/-deathroll/safe1
+  - /execute as $player at @s run function joshtiger:commands/-deathroll/safe2
+  - /execute as $player at @s run function joshtiger:commands/-deathroll/safe3
+  - /execute as $player at @s run function joshtiger:commands/-deathroll/safe4
+  - /execute as $player at @s run function joshtiger:commands/-deathroll/safe5
+  - /execute as $player at @s run function joshtiger:commands/-deathroll/safe6
+  - /execute as $player at @s run function joshtiger:commands/-deathroll/safe7
+  - /execute as $player at @s run function joshtiger:commands/-deathroll/safe8
+  - /execute as $player at @s run function joshtiger:commands/-deathroll/safe9
+  - /execute as $player at @s run function joshtiger:commands/-deathroll/safe10
+
+  permission-error: "&9[&2&lJ&6&lT&9]: &cThis command is currently undergoing some maintenance."
+  permission-required: false
+  cooldown: 15
+  register: true
+  
+luckyroll:
+  command: /luckyroll
+  type: RUN_CONSOLE_RANDOM
+  runcmd:
+  - /execute as $player at @s run function joshtiger:commands/-luckyroll/death
+  - /execute as $player at @s run function joshtiger:commands/-luckyroll/2
+  - /execute as $player at @s run function joshtiger:commands/-luckyroll/3
+  - /execute as $player at @s run function joshtiger:commands/-luckyroll/4
+  - /execute as $player at @s run function joshtiger:commands/-luckyroll/5
+  - /execute as $player at @s run function joshtiger:commands/-luckyroll/6
+  - /execute as $player at @s run function joshtiger:commands/-luckyroll/7
+  - /execute as $player at @s run function joshtiger:commands/-luckyroll/8
+  - /execute as $player at @s run function joshtiger:commands/-luckyroll/9
+  - /execute as $player at @s run function joshtiger:commands/-luckyroll/10
+  - /execute as $player at @s run function joshtiger:commands/-luckyroll/11
+  - /execute as $player at @s run function joshtiger:commands/-luckyroll/12
+  - /execute as $player at @s run function joshtiger:commands/-luckyroll/13
+  - /execute as $player at @s run function joshtiger:commands/-luckyroll/14
+  - /execute as $player at @s run function joshtiger:commands/-luckyroll/15
+  - /execute as $player at @s run function joshtiger:commands/-luckyroll/16
+  - /execute as $player at @s run function joshtiger:commands/-luckyroll/17
+  - /execute as $player at @s run function joshtiger:commands/-luckyroll/18
+  - /execute as $player at @s run function joshtiger:commands/-luckyroll/19
+  - /execute as $player at @s run function joshtiger:commands/-luckyroll/win
+
+  permission-error: "&9[&2&lJ&6&lT&9]: &cThis command is currently undergoing some maintenance."
+  permission-required: false
+  cooldown: 15
+  register: true
+  
+random:
+  command: /random
+  type: RUN_CONSOLE_RANDOM
+  runcmd:
+  
+  - /execute as $player at @s run function joshtiger:commands/-random/message/self/question1
+  - /execute as $player at @s run function joshtiger:commands/-random/message/self/question2
+  - /execute as $player at @s run function joshtiger:commands/-random/message/self/question3
+  - /execute as $player at @s run function joshtiger:commands/-random/message/self/question4
+  - /execute as $player at @s run function joshtiger:commands/-random/message/self/question5
+  - /execute as $player at @s run function joshtiger:commands/-random/message/self/question6
+  
+  - /execute as $player at @s run function joshtiger:commands/-random/reallygood/firespell
+  - /execute as $player at @s run function joshtiger:commands/-random/reallygood/fishgills
+  - /execute as $player at @s run function joshtiger:commands/-random/reallygood/fullheal
+  - /execute as $player at @s run function joshtiger:commands/-random/reallygood/godmode
+  - /execute as $player at @s run function joshtiger:commands/-random/reallygood/healthnut1
+  - /execute as $player at @s run function joshtiger:commands/-random/reallygood/healthnut2
+  - /execute as $player at @s run function joshtiger:commands/-random/reallygood/healthnut3
+  - /execute as $player at @s run function joshtiger:commands/-random/reallygood/hyper
+  - /execute as $player at @s run function joshtiger:commands/-random/reallygood/mrrichie
+  - /execute as $player at @s run function joshtiger:commands/-random/reallygood/mysticalwizard
+  - /execute as $player at @s run function joshtiger:commands/-random/reallygood/overpowered
+  - /execute as $player at @s run function joshtiger:commands/-random/reallygood/sanic
+  - /execute as $player at @s run function joshtiger:commands/-random/reallygood/speed3
+  - /execute as $player at @s run function joshtiger:commands/-random/reallygood/speed4
+  - /execute as $player at @s run function joshtiger:commands/-random/reallygood/supervision
+  - /execute as $player at @s run function joshtiger:commands/-random/reallygood/xpbar1
+  - /execute as $player at @s run function joshtiger:commands/-random/reallygood/xpbar2
+  
+  - /execute as $player at @s run function joshtiger:commands/-random/good/haste2
+  - /execute as $player at @s run function joshtiger:commands/-random/good/haste3
+  - /execute as $player at @s run function joshtiger:commands/-random/good/invisible
+  - /execute as $player at @s run function joshtiger:commands/-random/good/john
+  - /execute as $player at @s run function joshtiger:commands/-random/good/lowgravity
+  - /execute as $player at @s run function joshtiger:commands/-random/good/luck
+  - /execute as $player at @s run function joshtiger:commands/-random/good/lumberjack
+  - /execute as $player at @s run function joshtiger:commands/-random/good/mrcolorful
+  - /execute as $player at @s run function joshtiger:commands/-random/good/nighteye
+  - /execute as $player at @s run function joshtiger:commands/-random/good/regeneration
+  - /execute as $player at @s run function joshtiger:commands/-random/good/speed
+  - /execute as $player at @s run function joshtiger:commands/-random/good/speed2
+  - /execute as $player at @s run function joshtiger:commands/-random/good/clearbadomen
+ 
+  - /execute as $player at @s run function joshtiger:commands/-random/other/canttouch
+  - /execute as $player at @s run function joshtiger:commands/-random/other/canttouch2
+  - /execute as $player at @s run function joshtiger:commands/-random/other/disappointment
+  - /execute as $player at @s run function joshtiger:commands/-random/other/flip
+  - /execute as $player at @s run function joshtiger:commands/-random/other/flyingaway
+  - /execute as $player at @s run function joshtiger:commands/-random/other/groundslap
+  - /execute as $player at @s run function joshtiger:commands/-random/other/harmlesscreepers
+  - /execute as $player at @s run function joshtiger:commands/-random/other/mrgreen
+  - /execute as $player at @s run function joshtiger:commands/-random/other/mrsplashy
+  - /execute as $player at @s run function joshtiger:commands/-random/other/salmon
+  - /execute as $player at @s run function joshtiger:commands/-random/other/sneakycookie
+  - /execute as $player at @s run function joshtiger:commands/-random/other/batbomb
+  
+  - /execute as $player at @s run function joshtiger:commands/-random/bad/badluck
+  - /execute as $player at @s run function joshtiger:commands/-random/bad/blindness
+  - /execute as $player at @s run function joshtiger:commands/-random/bad/blockedmining
+  - /execute as $player at @s run function joshtiger:commands/-random/bad/cactus
+  - /execute as $player at @s run function joshtiger:commands/-random/bad/confused
+  - /execute as $player at @s run function joshtiger:commands/-random/bad/confused2
+  - /execute as $player at @s run function joshtiger:commands/-random/bad/levitation
+  - /execute as $player at @s run function joshtiger:commands/-random/bad/levitation2
+  - /execute as $player at @s run function joshtiger:commands/-random/bad/nommer
+  - /execute as $player at @s run function joshtiger:commands/-random/bad/pointyfish
+  - /execute as $player at @s run function joshtiger:commands/-random/bad/poison
+  - /execute as $player at @s run function joshtiger:commands/-random/bad/shotintospace
+  - /execute as $player at @s run function joshtiger:commands/-random/bad/slowness
+  - /execute as $player at @s run function joshtiger:commands/-random/bad/slowness2
+  - /execute as $player at @s run function joshtiger:commands/-random/bad/slowness3
+  - /execute as $player at @s run function joshtiger:commands/-random/bad/tridents
+  
+  - /execute as $player at @s run function joshtiger:commands/-random/reallybad/lightning
+  - /execute as $player at @s run function joshtiger:commands/-random/reallybad/nearestmob
+  - /execute as $player at @s run function joshtiger:commands/-random/reallybad/nommers
+  - /execute as $player at @s run function joshtiger:commands/-random/reallybad/poisongas
+  - /execute as $player at @s run function joshtiger:commands/-random/reallybad/serialkiller
+  - /execute as $player at @s run function joshtiger:commands/-random/reallybad/mafia
+  
+  - /execute as $player at @s run function joshtiger:commands/-random/nothing
+  - /execute as $player at @s run function joshtiger:commands/-random/nothing
+  - /execute as $player at @s run function joshtiger:commands/-random/nothing
+  - /execute as $player at @s run function joshtiger:commands/-random/nothing
+  - /execute as $player at @s run function joshtiger:commands/-random/nothing
+  - /execute as $player at @s run function joshtiger:commands/-random/nothing
+  - /execute as $player at @s run function joshtiger:commands/-random/nothing
+  - /execute as $player at @s run function joshtiger:commands/-random/nothing
+  - /execute as $player at @s run function joshtiger:commands/-random/nothing
+  - /execute as $player at @s run function joshtiger:commands/-random/nothing
+
+  error-message: "&9[&2&lJ&6&lT&9]: &cThis command can only be used in the overworld and end"
+  permission-error: "&9[&2&lJ&6&lT&9]: &cThis command is currently undergoing some maintenance."
+  permission-required: false
+  cooldown: 30
+  register: true
+  allowed_worlds:
+  - world
+  - world_the_end
+  
+Randomness:
+  command: /Randomness
+  type: RUN_CONSOLE
+  runcmd:
+  - /execute as $player at @s run playsound gamez.beep.11 master @s ~ ~ ~ 5 1.2
+  - /execute as $player at @s run function joshtiger:commands/-random/display_randomness
+
+  permission-error: "&cError: This command is offline."
+  permission-required: false
+  register: true
+  
+Randoms:
+  command: /Randoms
+  type: RUN_CONSOLE
+  runcmd:
+  - /execute as $player at @s run playsound gamez.beep.11 master @s ~ ~ ~ 5 1.2
+  - /execute as $player at @s run function joshtiger:commands/-random/display_players
+
+  permission-error: "&cError: This command is offline."
+  permission-required: false
+  register: true
+  
+RandomCommands:
+  command: /randomcommands
+  type: RUN_CONSOLE
+  runcmd:
+  - /execute as $player at @s run playsound gamez.beep.11 master @s ~ ~ ~ 5 1.2
+  - /execute as $player at @s run function joshtiger:commands/-random/display_commands
+  
+  permission-error: "&9[&2&lJ&6&lT&9]: &cYou do not have permissions to use this command."
+  permission-required: false
+  register: true
+  
+sparkle:
+  command: /sparkle
+  type: RUN_CONSOLE
+  runcmd:
+  - /execute as $player at @s run function joshtiger:commands/-random/commands/sparkle
+
+  permission-error: "&9[&2&lJ&6&lT&9]: &cYou do not have permissions to use this command."
+  permission-required: false
+  register: true
+  
+rocketjump:
+  command: /rocketjump
+  type: RUN_CONSOLE
+  runcmd:
+  - /execute as $player at @s run function joshtiger:commands/-random/commands/rocketjump
+
+  error-message: "&9[&2&lJ&6&lT&9]: &cInvalid world, can only be used in Survival world."
+  permission-error: "&9[&2&lJ&6&lT&9]: &cYou do not have permissions to use this command."
+  permission-required: false
+  cooldown: 5
+  register: true
+  allowed_worlds:
+  - world
+
+spookysound:
+  command: /spookysound
+  type: RUN_CONSOLE
+  runcmd:
+  - /execute as $player at @s run function joshtiger:commands/-random/commands/spookysound
+
+  permission-error: "&9[&2&lJ&6&lT&9]: &cYou do not have permissions to use this command."
+  permission-required: false
+  cooldown: 12
+  register: true
+  
+debug_random:
+  command: /debug_random
+  type: RUN_CONSOLE_RANDOM
+  runcmd:
+  - /execute as $player at @s run function joshtiger:commands/-random/message/self/error
+  
+  - /execute as $player at @s run function joshtiger:commands/-random/reallygood/firespell
+  - /execute as $player at @s run function joshtiger:commands/-random/reallygood/fishgills
+  - /execute as $player at @s run function joshtiger:commands/-random/reallygood/fullheal
+  - /execute as $player at @s run function joshtiger:commands/-random/reallygood/godmode
+  - /execute as $player at @s run function joshtiger:commands/-random/reallygood/healthnut1
+  - /execute as $player at @s run function joshtiger:commands/-random/reallygood/healthnut2
+  - /execute as $player at @s run function joshtiger:commands/-random/reallygood/healthnut3
+  - /execute as $player at @s run function joshtiger:commands/-random/reallygood/hyper
+  - /execute as $player at @s run function joshtiger:commands/-random/reallygood/mrrichie
+  - /execute as $player at @s run function joshtiger:commands/-random/reallygood/mysticalwizard
+  - /execute as $player at @s run function joshtiger:commands/-random/reallygood/overpowered
+  - /execute as $player at @s run function joshtiger:commands/-random/reallygood/sanic
+  - /execute as $player at @s run function joshtiger:commands/-random/reallygood/speed3
+  - /execute as $player at @s run function joshtiger:commands/-random/reallygood/speed4
+  - /execute as $player at @s run function joshtiger:commands/-random/reallygood/supervision
+  - /execute as $player at @s run function joshtiger:commands/-random/reallygood/xpbar1
+  - /execute as $player at @s run function joshtiger:commands/-random/reallygood/xpbar2
+  
+  - /execute as $player at @s run function joshtiger:commands/-random/good/haste2
+  - /execute as $player at @s run function joshtiger:commands/-random/good/haste3
+  - /execute as $player at @s run function joshtiger:commands/-random/good/invisible
+  - /execute as $player at @s run function joshtiger:commands/-random/good/luck
+  - /execute as $player at @s run function joshtiger:commands/-random/good/mrcolorful
+  - /execute as $player at @s run function joshtiger:commands/-random/good/nighteye
+  - /execute as $player at @s run function joshtiger:commands/-random/good/regeneration
+  - /execute as $player at @s run function joshtiger:commands/-random/good/speed
+  - /execute as $player at @s run function joshtiger:commands/-random/good/speed2
+  - /execute as $player at @s run function joshtiger:commands/-random/good/lumberjack
+  - /execute as $player at @s run function joshtiger:commands/-random/good/john
+ 
+  - /execute as $player at @s run function joshtiger:commands/-random/other/canttouch
+  - /execute as $player at @s run function joshtiger:commands/-random/other/canttouch2
+  - /execute as $player at @s run function joshtiger:commands/-random/other/disappointment
+  - /execute as $player at @s run function joshtiger:commands/-random/other/flip
+  - /execute as $player at @s run function joshtiger:commands/-random/other/flyingaway
+  - /execute as $player at @s run function joshtiger:commands/-random/other/groundslap
+  - /execute as $player at @s run function joshtiger:commands/-random/other/harmlesscreepers
+  - /execute as $player at @s run function joshtiger:commands/-random/other/mrgreen
+  - /execute as $player at @s run function joshtiger:commands/-random/other/mrsplashy
+  - /execute as $player at @s run function joshtiger:commands/-random/other/salmon
+  - /execute as $player at @s run function joshtiger:commands/-random/other/sneakycookie
+  
+  - /execute as $player at @s run function joshtiger:commands/-random/bad/badluck
+  - /execute as $player at @s run function joshtiger:commands/-random/bad/blindness
+  - /execute as $player at @s run function joshtiger:commands/-random/bad/blockedmining
+  - /execute as $player at @s run function joshtiger:commands/-random/bad/cactus
+  - /execute as $player at @s run function joshtiger:commands/-random/bad/confused
+  - /execute as $player at @s run function joshtiger:commands/-random/bad/confused2
+  - /execute as $player at @s run function joshtiger:commands/-random/bad/floating1
+  - /execute as $player at @s run function joshtiger:commands/-random/bad/nommer
+  - /execute as $player at @s run function joshtiger:commands/-random/bad/pointyfish
+  - /execute as $player at @s run function joshtiger:commands/-random/bad/poison
+  - /execute as $player at @s run function joshtiger:commands/-random/bad/slowness
+  - /execute as $player at @s run function joshtiger:commands/-random/bad/slowness2
+  - /execute as $player at @s run function joshtiger:commands/-random/bad/slowness3
+  - /execute as $player at @s run function joshtiger:commands/-random/bad/tridents
+  - /execute as $player at @s run function joshtiger:commands/-random/bad/shotintospace
+  
+  - /execute as $player at @s run function joshtiger:commands/-random/reallybad/nearestmob
+  - /execute as $player at @s run function joshtiger:commands/-random/reallybad/nommers
+  - /execute as $player at @s run function joshtiger:commands/-random/reallybad/poisongas
+  - /execute as $player at @s run function joshtiger:commands/-random/reallybad/serialkiller
+  
+  - /execute as $player at @s run function joshtiger:commands/-random/nothing
+  - /execute as $player at @s run function joshtiger:commands/-random/nothing
+  - /execute as $player at @s run function joshtiger:commands/-random/nothing
+  - /execute as $player at @s run function joshtiger:commands/-random/nothing
+  - /execute as $player at @s run function joshtiger:commands/-random/nothing
+  - /execute as $player at @s run function joshtiger:commands/-random/nothing
+  - /execute as $player at @s run function joshtiger:commands/-random/nothing
+  - /execute as $player at @s run function joshtiger:commands/-random/nothing
+  - /execute as $player at @s run function joshtiger:commands/-random/nothing
+  - /execute as $player at @s run function joshtiger:commands/-random/nothing
+
+  error-message: "&9[&2&lJ&6&lT&9]: &cThis command can only be used in the overworld and end"
+  permission-error: "&9[&2&lJ&6&lT&9]: &cYou do not have permissions to use this command."
+  permission-required: false
+  cooldown: 94127
+  allowed_worlds:
+  - world
+  - world_the_end
+  
+random_broke:
+  command: /random_broke
+  type: RUN_CONSOLE_RANDOM
+  runcmd:
+  - /execute as $player at @s run function joshtiger:commands/-random/nothing
+
+  permission-error: "&9[&2&lJ&6&lT&9]: &cYou do not have permissions to use this command."
+  permission-required: true
+  cooldown: 94127
+
+
+forcerandom:
+  command: /forcerandom
+  type: RUN_CONSOLE_RANDOM
+  runcmd:
+
+  - /execute as $player at @s run function joshtiger:commands/-random/nothing2
+  - /execute as $player at @s run function joshtiger:commands/-random/nothing2
+  - /execute as $player at @s run function joshtiger:commands/-random/nothing2
+  - /execute as $player at @s run function joshtiger:commands/-random/nothing2
+  - /execute as $player at @s run function joshtiger:commands/-random/nothing2
+
+  error-message: "&9[&2&lJ&6&lT&9]: &cInvalid world, can only be used in Survival world."
+  permission-error: "&9[&2&lJ&6&lT&9]: &cYou do not have permissions to use this command."
+  permission-required: true
+  allowed_worlds:
+  - world
+
+  
+randommsg:
+  command: /randommsg
+  type: RUN_COMMAND
+  runcmd:
+   - /setrandommood
+   - /setrandomlocation
+   - /setrandomobject
+   - /setrandomcolor
+   - /setrandomeffect
+   - /setrandommsg
+   - '$broadcasttext$&9[&2&lJ&6&lT&5RandomMsg&9]: &b$PlayerData%msg%'
+
+  cooldown: 10
+  permission-error: "&9[&2&lJ&6&lT&9]: &cYou do not have permissions to use this command."
+  permission-required: false
+
+setrandommood:
+  command: /setrandommood
+  type: RUN_CONSOLE_RANDOM
+  runcmd:
+   - $Script$%PlayerData%randommood=&aHappy
+   - $Script$%PlayerData%randommood=&1Sad
+   - $Script$%PlayerData%randommood=&4Angry
+   - $Script$%PlayerData%randommood=&5Confused
+   - $Script$%PlayerData%randommood=&4Upset
+   - $Script$%PlayerData%randommood=&3Sleepy
+   - $Script$%PlayerData%randommood=&bHyper
+   - $Script$%PlayerData%randommood=&eAnnoyed
+
+  permission-error: "&9[&2&lJ&6&lT&9]: &cYou do not have permissions to use this command."
+  permission-required: false
+  
+setrandomeffect:
+  command: /setrandomeffect
+  type: RUN_CONSOLE_RANDOM
+  runcmd:
+   - $Script$%PlayerData%randomeffect=&5Magic
+   - $Script$%PlayerData%randomeffect=&bFlying
+   - $Script$%PlayerData%randomeffect=&eLoud
+   - $Script$%PlayerData%randomeffect=&bShiny
+   - $Script$%PlayerData%randomeffect=&8Slow
+   - $Script$%PlayerData%randomeffect=&bFast
+   - $Script$%PlayerData%randomeffect=&5Crazy
+
+  permission-error: "&9[&2&lJ&6&lT&9]: &cYou do not have permissions to use this command."
+  permission-required: false
+  
+setrandomlocation:
+  command: /setrandomlocation
+  type: RUN_CONSOLE_RANDOM
+  runcmd:
+   - $Script$%PlayerData%randomlocation=&9School
+   - $Script$%PlayerData%randomlocation=&9Home
+   - $Script$%PlayerData%randomlocation=&9Tree house
+   - $Script$%PlayerData%randomlocation=&9Walmart
+   - $Script$%PlayerData%randomlocation=&9Store
+   - $Script$%PlayerData%randomlocation=&9Zoo
+   - $Script$%PlayerData%randomlocation=&9Australia
+   - $Script$%PlayerData%randomlocation=&9Texas
+   - $Script$%PlayerData%randomlocation=&9Mall
+   - $Script$%PlayerData%randomlocation=&9Fastfood place
+   - $Script$%PlayerData%randomlocation=&9Bank
+   - $Script$%PlayerData%randomlocation=&9Large rock
+   - $Script$%PlayerData%randomlocation=&9Music store
+   - $Script$%PlayerData%randomlocation=&9Pet store
+
+
+  permission-error: "&9[&2&lJ&6&lT&9]: &cYou do not have permissions to use this command."
+  permission-required: false
+  
+setrandomobject:
+  command: /setrandomobject
+  type: RUN_CONSOLE_RANDOM
+  runcmd:
+   - $Script$%PlayerData%randomobject=&3Plate
+   - $Script$%PlayerData%randomobject=&3Computer
+   - $Script$%PlayerData%randomobject=&3Cup
+   - $Script$%PlayerData%randomobject=&3Pillow
+   - $Script$%PlayerData%randomobject=&3Ball
+   - $Script$%PlayerData%randomobject=&3Speaker
+   - $Script$%PlayerData%randomobject=&3Can
+   - $Script$%PlayerData%randomobject=&3Piano
+   - $Script$%PlayerData%randomobject=&3Toaster
+   - $Script$%PlayerData%randomobject=&3TV
+   - $Script$%PlayerData%randomobject=&3Car
+   - $Script$%PlayerData%randomobject=&3Truck
+   - $Script$%PlayerData%randomobject=&3Bed
+   - $Script$%PlayerData%randomobject=&3Empty Bottle
+   - $Script$%PlayerData%randomobject=&3Bottle
+   - $Script$%PlayerData%randomobject=&3Chair
+   - $Script$%PlayerData%randomobject=&3Table
+   - $Script$%PlayerData%randomobject=&3Desk
+   - $Script$%PlayerData%randomobject=&3Rug
+   - $Script$%PlayerData%randomobject=&3Lamp
+   - $Script$%PlayerData%randomobject=&3Phone Charger
+   - $Script$%PlayerData%randomobject=&3Blender
+   - $Script$%PlayerData%randomobject=&3Doorbell
+   - $Script$%PlayerData%randomobject=&3Tree
+   - $Script$%PlayerData%randomobject=&3Keyboard
+   - $Script$%PlayerData%randomobject=&3Bag
+   - $Script$%PlayerData%randomobject=&3Backpack
+   - $Script$%PlayerData%randomobject=&3Light Switch
+   - $Script$%PlayerData%randomobject=&3Mirror
+   - $Script$%PlayerData%randomobject=&3Cactus
+
+  permission-error: "&9[&2&lJ&6&lT&9]: &cYou do not have permissions to use this command."
+  permission-required: false
+
+setrandomcolor:
+  command: /setrandomcolor
+  type: RUN_CONSOLE_RANDOM
+  runcmd:
+   - $Script$%PlayerData%randomcolor=&4Red
+   - $Script$%PlayerData%randomcolor=&aGreen
+   - $Script$%PlayerData%randomcolor=&9Blue
+   - $Script$%PlayerData%randomcolor=&6Orange
+   - $Script$%PlayerData%randomcolor=&eYellow
+   - $Script$%PlayerData%randomcolor=&bAqua
+   - $Script$%PlayerData%randomcolor=&dPink
+   - $Script$%PlayerData%randomcolor=&5Purple
+
+  permission-error: "&9[&2&lJ&6&lT&9]: &cYou do not have permissions to use this command."
+  permission-required: false
+
+  
+setrandommsg:
+  command: /setrandommsg
+  type: RUN_CONSOLE_RANDOM
+  runcmd:
+   - $Script$%PlayerData%msg=&a$player &7felt $PlayerData%randommood%&7, so they poked a $PlayerData%randomobject%
+   - $Script$%PlayerData%msg=&a$player &7wished that they were a $PlayerData%randomobject%&7.
+   - $Script$%PlayerData%msg=&a$player &7saw a $PlayerData%randomeffect% $PlayerData%randomobject%&7... making them feel really $PlayerData%randommood%&7.
+   - $Script$%PlayerData%msg=&a$player &7saw a $PlayerData%randomcolor% $PlayerData%randomobject%&7... and liked the color.
+   - $Script$%PlayerData%msg=&a$player &7saw a $PlayerData%randomcolor% $PlayerData%randomobject%&7... and really didn't like the color.
+   - $Script$%PlayerData%msg=&a$player &7got too $PlayerData%randommood%&7, so they started throwing $PlayerData%randomobject%s &7at a $PlayerData%randomlocation%&7.
+   - $Script$%PlayerData%msg=&a$player &7starts making $PlayerData%randomobject% &7sounds.
+   - $Script$%PlayerData%msg=&a$player &7screams just like an $PlayerData%randommood% $PlayerData%randomobject%
+   - $Script$%PlayerData%msg=&a$player &7turned $PlayerData%randomcolor% &7when they saw a $PlayerData%randomobject%
+   - $Script$%PlayerData%msg=&a$player &7slapped their self using only a $PlayerData%randomobject%
+   - $Script$%PlayerData%msg=&a$player &7went to a $PlayerData%randomlocation% &7to buy some $PlayerData%randomobject%s&7.
+   - $Script$%PlayerData%msg=&a$player &7screams as loud as a $PlayerData%randomobject%&7.
+   - $Script$%PlayerData%msg=&a$player &7tried to eat a $PlayerData%randomobject% &7and died...
+   - $Script$%PlayerData%msg=&a$player &7ate a $PlayerData%randomobject%&7, making them feel $PlayerData%randommood%&7.
+   - $Script$%PlayerData%msg=&a$player &7found a random $PlayerData%randomeffect% $PlayerData%randomobject%&7.
+   - $Script$%PlayerData%msg=&a$player &7has a $PlayerData%randomeffect% $PlayerData%randomobject%&7 head.
+   - $Script$%PlayerData%msg=&a$player &7is now a $PlayerData%randomeffect% $PlayerData%randomobject%&7.
+   - $Script$%PlayerData%msg=&a$player &7tried to slap &a$randomplayer &7but failed.
+
+  permission-error: "&9[&2&lJ&6&lT&9]: &cYou do not have permissions to use this command."
+  permission-required: false

@@ -1,0 +1,337 @@
+pack:
+  command: /pack
+  type: ALIAS
+  alias: /resourcepacks
+  permission-required: false
+  register: true
+  
+packs:
+  command: /packs
+  type: ALIAS
+  alias: /resourcepacks
+  permission-required: false
+  register: true
+
+resourcepack:
+  command: /resourcepack
+  type: ALIAS
+  alias: /resourcepacks
+  permission-required: false
+  register: true
+
+
+resourcepacks:
+  command: /resourcepacks
+  type: ICON_MENU
+  iconmenu_title: '&3&lJoshtigers &9&lResourcepacks'
+  iconmenu_size: 9
+  iconmenu_commands:
+  - '0:STRUCTURE_BLOCK:0:/open_resourcepacks1_menu:&bResourcepacks:&7[Packs] 4;&7 - &cJoshtiger Pack;&7 - &cSound pack;&7 - &7Optifine pack;&7 - &7Gamez'
+  - '1:CONCRETE:1:/open_resourcepacks2_menu:&5Random Packs:&7[Packs] 4;&7 - &eRandom Crazy Creepers;&7 - &eZombie Wolves;&7 - &eJoshtigers Maps;&7 - &7Colorful foxes;&7 - &aChristmas pack'
+  - '2:CONCRETE:2:/open_resourcepacks3_menu:&aHelpful Packs:&7[Packs] 2;&7 - &eInfestations;&7 - &f@get_page3_pack2'
+  cost: 0
+  permission-error: "&cError: something is, well uhhh... broken. o.o"
+  permission-required: false
+  register: true
+
+resourcepacks1:
+  command: /resourcepacks1
+  type: ICON_MENU
+  iconmenu_title: '&9Select resource pack OuO'
+  iconmenu_size: 27
+  iconmenu_commands:
+  - '0:COOKIE:0:/get_resourcepack_joshtiger:&bJoshtigers Pack:&7[Date] - &b&l4/2/2019;&7[Status] - &cOut of date;&7[Version] - &e1.13.2;&7[PackType] - &bAll;&7[Size] -&3 33.3 MB;&7[Optifine] - &aSupported;&7[Creator] - &2josh&6tiger;&7;&7[&3Info&7];&7It is much better with Optifine;&7but is alright to use if you;&7do not have Optifine.;&6I am still working on it. &3OuO'
+  - '1:CONCRETE:4:/get_resourcepack_sound:&bSound pack:&7[Date] - &b&l4/2/2019;&7[Status] - &cOut of date;&7[Version] - &e1.13.2;&7[PackType] - &9Sound;&7[Size] -&3 20.6 MB;&7[Creator] - &2josh&6tiger;&7;&7[&3Info&7];&7This pack currently has 451 ;&7custom sounds for the server.;&7'
+  - '2:CONCRETE:7:/open_resourcepacks1_menu:&bOptifine Pack:&7[Date] - &b&lComing soon;&7[Version] - &e1.13.2;&7[PackType] - &eOptifine;&7[Size] -&3 2.12 MB;&7[Optifine] - &bRequired;&7[Creator] - &2josh&6tiger;&7;&7[&3Info&7];&7Includes only optifine stuff;&7from the Joshtiger Pack;&7'
+  - '3:CONCRETE:7:/open_resourcepacks1_menu:&bGamez:&7[Date] - &b&lComing soon;&7[Version] - &e1.13.2;&7[PackType] - &bAll;&7[Size] -&3 236.4 MB;&7[Creator] - &2josh&6tiger;&7;&7[&3Info&7];&7A resource pack used with;&7games that are made in;&7Joshtigers Gamez CPU/HUB.;&7'
+  - '26:REDSTONE:0:/resourcepacks_menu:&bReturn to &a&lMain Menu:&bClick to go back OuO'
+
+  cost: 0
+  permission-error: "&cError: something is, well uhhh... broken. o.o"
+  permission-required: false
+  register: false
+  
+resourcepacks2:
+  command: /resourcepacks2
+  type: ICON_MENU
+  iconmenu_title: '&5Random packs'
+  iconmenu_size: 27
+  iconmenu_commands:
+  - '0:CONCRETE:4:/get_resourcepack_crazycreepers:&bRandom Crazy Creepers:&7[Date] - &b&l2/13/2019;&7[Status] - &aUp to date;&7[Version] - &e1.13.2;&7[PackType] - &9Sound;&7[Size] -&3 1.08 MB;&7[Creator] - &2josh&6tiger;&7;&7[&3Info&7];&7Adds 80+ sounds to creepers that;&7will randomly play before it explodes.'
+  - '1:CONCRETE:4:/get_resourcepack_zombiewolves:&bZombie Wolves:&7[Date] - &b&l4/2/2019;&7[Status] - &aUp to date;&7[Version] - &e1.13.2;&7[PackType] - &aTexture&7/&9Sound;&7[Size] -&3 871 KB;&7[Optifine] - &aSupported;&7[Creator] - &2josh&6tiger;&7;&7[&3Info&7];&7Changes zombies/husks into wolves.'
+  - '2:CONCRETE:4:/get_resourcepack_joshtigermaps:&bJoshtiger - Maps:&7[Date] - &b&l4/2/2019;&7[Status] - &aUp to date;&7[Version] - &e1.13.2;&7[PackType] - &aTexture;&7[Size] -&3 5.14 MB;&7[Creator] - &2josh&6tiger;&7;&7[&3Info&7];&7Sort of helps with finding;&7treasure and stuffs. ouo'
+  - '3:CONCRETE:7:/open_resourcepacks1_menu:&bColorful foxes:&7[Date] - &b&lComing soon;&7[Status] - &f?;&7[Version] - &e1.14;&7[PackType] - &aTexture;&7[Size] -&3 3.12 MB;&7[Optifine] - &bRequired;&7[Creator] - &2josh&6tiger;&7;&7[&3Info&7];&7Colorful foxes. OuO'
+  - '4:CONCRETE:5:/get_resourcepack_christmaseventpack:&bChristmas §eevent §bpack:&7[Date] - &b&l1/3/2019;&7[Status] - &aUp to date;&7[Version] - &e1.15.1;&7[PackType] - &9Custom/Sound;&7[Size] -&3 2.60 MB;&7[Creator] - &2josh&6tiger;&7;&7[&3Info&7];&7Adds in some custom;&7textures/sounds for an event.;&7'
+  - '26:REDSTONE:0:/resourcepacks_menu:&bReturn to &a&lMain Menu:&bClick to go back OuO'
+
+  cost: 0
+  permission-error: "&cError: something is, well uhhh... broken. o.o"
+  permission-required: false
+  register: false
+ 
+resourcepacks3:
+  command: /resourcepacks3
+  type: ICON_MENU
+  iconmenu_title: '&9Helpful packs'
+  iconmenu_size: 27
+  iconmenu_commands:
+  - '0:CONCRETE:5:/get_resourcepack_infestations:&bInfestations:&7[Date] - &b&l2/13/2019;&7[Status] - &aUp to date;&7[Version] - &e1.13.2;&7[PackType] - &aTexture;&7[Size] -&3 1.62 MB;&7[Creator] - &2josh&6tiger;&7;&7[&3Info&7];&7Highlights infested blocks;&7(Silverfish blocks)'
+  - '1:CONCRETE:0:/resourcepacks_notfound:&fselected_pack_name:&7[Date] - &b&l1/1/2000;&7[Status] - &cOut of date;&7[Version] - &e0;&7[PackType] - &f@selected_pack_type;&7[Size] -&3 99.99 TB;&7[Creator] - &f@selected_pack_creator;&7;&7[&3Info&7];&f@selected_pack_info'
+  - '26:REDSTONE:0:/resourcepacks_menu:&bReturn to &a&lMain Menu:&bClick to go back OuO'
+
+  cost: 0
+  permission-error: "&cError: something is, well uhhh... broken. o.o"
+  permission-required: false
+  register: false
+
+open_resourcepacks1_menu:
+  command: /open_resourcepacks1_menu
+  type: RUN_COMMAND
+  runcmd:
+  - $delay$/resourcepacks1
+
+  delaytimer: 3
+  delaytimer_format: TICKS
+  permission-required: false
+  
+open_resourcepacks2_menu:
+  command: /open_resourcepacks2_menu
+  type: RUN_COMMAND
+  runcmd:
+  - $delay$/resourcepacks2
+
+  delaytimer: 3
+  delaytimer_format: TICKS
+  permission-required: false
+  
+open_resourcepacks3_menu:
+  command: /open_resourcepacks3_menu
+  type: RUN_COMMAND
+  runcmd:
+  - $delay$/resourcepacks3
+
+  delaytimer: 3
+  delaytimer_format: TICKS
+  permission-required: false
+
+resourcepack_menu:
+  command: /resourcepack_menu
+  type: RUN_COMMAND
+  runcmd:
+  - $delay$/resourcepacks
+
+  delaytimer: 3
+  delaytimer_format: TICKS
+  permission-required: false
+  
+resourcepacks_menu:
+  command: /resourcepacks_menu
+  type: RUN_COMMAND
+  runcmd:
+  - $delay$/resourcepacks
+
+  delaytimer: 3
+  delaytimer_format: TICKS
+  permission-required: false
+
+  
+get_resourcepack_sound:
+  command: /get_resourcepack_sound
+  type: RUN_CONSOLE
+  runcmd:
+  - /execute as $player at @s run playsound gamez.beep.11 master $player ~ ~ ~ 5 1.2
+  - '$text$&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-'
+  - '$text$&a'
+  - '$text$&aYou can get the resource pack here. ouo'
+  - '$text$&7[&bLink&7]'
+  - '$text$&9&ohttps://www.dropbox.com/s/k34f0y1jwr32tp4/Joshtiger%20-%20Sounds.zip?dl=1'
+  - '$text$&b'
+  - '$text$&7[&3Info&7]'
+  - '$text$&7This pack currently has 451 custom sounds for the server.'
+  - '$text$&b'
+  - '$text$&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-'
+  permission-error: "&9[&2&lJ&6&lT&9]: &cYou do not have permissions to use this command."
+  permission-required: false
+  register: false
+
+get_resourcepack_joshtiger:
+  command: /get_resourcepack_joshtiger
+  type: RUN_CONSOLE
+  runcmd:
+  - /execute as $player at @s run playsound gamez.beep.11 master $player ~ ~ ~ 5 1.2
+  - '$text$&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-'
+  - '$text$&a'
+  - '$text$&aYou can get the resource pack here. ouo'
+  - '$text$&7[&bLink&7]'
+  - '$text$&9&ohttps://www.dropbox.com/s/wqnweka48as1mb1/Joshtiger.zip?dl=1'
+  - '$text$&b'
+  - '$text$&7[&3Info&7]'
+  - '$text$&7It is much better with Optifine'
+  - '$text$&7but it is alright to use if you do not have Optifine.'
+  - '$text$&7I am still working on it. &3OuO'
+  - '$text$&b'
+  - '$text$&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-'
+  permission-error: "&9[&2&lJ&6&lT&9]: &cYou do not have permissions to use this command."
+  permission-required: false
+  register: false
+
+get_resourcepack_crazycreepers:
+  command: /get_resourcepack_crazycreepers
+  type: RUN_CONSOLE
+  runcmd:
+  - /execute as $player at @s run playsound gamez.beep.11 master $player ~ ~ ~ 5 1.2
+  - '$text$&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-'
+  - '$text$&a'
+  - '$text$&aYou can get the resource pack here. ouo'
+  - '$text$&7[&bLink&7]'
+  - '$text$&9&ohttps://www.dropbox.com/s/fe7vusokwhuk66h/Random%20Crazy%20Creepers.zip?dl=1'
+  - '$text$&b'
+  - '$text$&7[&3Info&7]'
+  - '$text$&7Adds 80+ sounds to creepers that will '
+  - '$text$&7randomly play before it explodes.'
+  - '$text$&b'
+  - '$text$&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-'
+  permission-error: "&9[&2&lJ&6&lT&9]: &cYou do not have permissions to use this command."
+  permission-required: false
+  register: false
+  
+get_resourcepack_zombiewolves:
+  command: /get_resourcepack_zombiewolves
+  type: RUN_CONSOLE
+  runcmd:
+  - /execute as $player at @s run playsound gamez.beep.11 master $player ~ ~ ~ 5 1.2
+  - '$text$&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-'
+  - '$text$&a'
+  - '$text$&aYou can get the resource pack here. ouo'
+  - '$text$&7[&bLink&7]'
+  - '$text$&9&ohttps://www.dropbox.com/s/ozk2nj6ieanie8r/Zombie%20wolves.zip?dl=1'
+  - '$text$&b'
+  - '$text$&7[&3Info&7]'
+  - '$text$&7Changes zombies/husks into wolves. '
+  - '$text$&b'
+  - '$text$&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-'
+  permission-error: "&9[&2&lJ&6&lT&9]: &cYou do not have permissions to use this command."
+  permission-required: false
+  register: false
+
+get_resourcepack_joshtigermaps:
+  command: /get_resourcepack_joshtigermaps
+  type: RUN_CONSOLE
+  runcmd:
+  - /execute as $player at @s run playsound gamez.beep.11 master $player ~ ~ ~ 5 1.2
+  - '$text$&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-'
+  - '$text$&a'
+  - '$text$&aYou can get the resource pack here. ouo'
+  - '$text$&7[&bLink&7]'
+  - '$text$&9&ohttps://www.dropbox.com/s/vuzhwzw9gc1txdd/Joshtiger%20-%20Maps.zip?dl=1'
+  - '$text$&b'
+  - '$text$&7[&3Info&7]'
+  - '$text$&7Sort of helps with finding treasure and stuffs. ouo'
+  - '$text$&b'
+  - '$text$&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-'
+  permission-error: "&9[&2&lJ&6&lT&9]: &cYou do not have permissions to use this command."
+  permission-required: false
+  register: false
+
+get_resourcepack_christmaseventpack:
+  command: /get_resourcepack_christmaseventpack
+  type: RUN_CONSOLE
+  runcmd:
+  - /execute as $player at @s run playsound gamez.beep.11 master $player ~ ~ ~ 5 1.2
+  - '$text$&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-'
+  - '$text$&a'
+  - '$text$&aYou can get the resource pack here. ouo'
+  - '$text$&7[&bLink&7]'
+  - '$text$&9&ohttps://www.dropbox.com/s/b2928bffepzf8zp/Joshtiger%27s%20Christmas%20Event%201.15.1.zip?dl=1'
+  - '$text$&b'
+  - '$text$&7[&3Info&7]'
+  - '$text$&7Adds custom textures/sounds for the christmas event.'
+  - '$text$&7The only way to see the custom cookies in single player is by spawning them in.'
+  - '$text$&b'
+  - '$text$&7Their &eCustomModelData &7IDs are &a27 &7and &a28&7.'
+  - '$text$&7In single player, try &b/give @s cookie{CustomModelData:27} &7x3'
+  - '$text$&b'
+  - '$text$&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-'
+  permission-error: "&9[&2&lJ&6&lT&9]: &cYou do not have permissions to use this command."
+  permission-required: false
+  register: false
+ 
+get_resourcepack_infestations:
+  command: /get_resourcepack_infestations
+  type: RUN_CONSOLE
+  runcmd:
+  - /execute as $player at @s run playsound gamez.beep.11 master $player ~ ~ ~ 5 1.2
+  - '$text$&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-'
+  - '$text$&a'
+  - '$text$&aYou can get the resource pack here. ouo'
+  - '$text$&7[&bLink&7]'
+  - '$text$&9&ohttps://www.dropbox.com/s/fw01qe59kbrhspx/Infestations.zip?dl=1'
+  - '$text$&b'
+  - '$text$&7[&3Info&7]'
+  - '$text$&7Highlights infested blocks &7(Silverfish blocks)'
+  - '$text$&b'
+  - '$text$&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-'
+  permission-error: "&9[&2&lJ&6&lT&9]: &cYou do not have permissions to use this command."
+  permission-required: false
+  register: false
+
+resourcepack_player_joshtiger_1:
+  command: /resourcepack_player_joshtiger_1
+  type: RUN_CONSOLE
+  runcmd:
+  - /tellraw @a[score_JTLogger_min=9,score_JTLogger=10] {"text":"&a[&2J&6T&a] &a$player &eused &b/resourcepack&e."}
+  - /execute as $player at @s run playsound gamez.beep.11 master $player ~ ~ ~ 5 1.2
+  - '$text$&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-'
+  - '$text$&a'
+  - '$text$&aAnimates glowstone to change in hue OuO'
+  - '$text$&a'
+  - '$text$&9&ohttps://www.dropbox.com/s/57h0vhw7wjewnfm/%C2%A7a%C2%A7l%2B%20%C2%A7aR%C2%A7ba%C2%A7ci%C2%A7dn%C2%A75b%C2%A76o%C2%A7ew%20%C2%A7bG%C2%A7al%C2%A75o%C2%A7ew%C2%A72s%C2%A73t%C2%A7bo%C2%A7dn%C2%A74e%C2%A7r.zip?dl=1'
+  - '$text$&a'
+  - '$text$&6Good god that is a long link... maybe i should not color the name of the resouce pack. o3o'
+  - '$text$&b'
+  - '$text$&7Last update: &e?/?/2017'
+  - '$text$&7Minecraft Version: &e1.11'
+  - '$text$&b'
+  - '$text$&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-'
+  permission-error: "&9[&2&lJ&6&lT&9]: &cYou do not have permissions to use this command."
+  permission-required: false
+  register: false
+
+resourcepack_player_joshtiger_2:
+  command: /resourcepack_player_joshtiger_2
+  type: RUN_CONSOLE
+  runcmd:
+  - /execute as $player at @s run playsound gamez.beep.11 master $player ~ ~ ~ 5 1.2
+  - '$text$&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-'
+  - '$text$&a'
+  - '$text$&aYou can get this resource pack here.'
+  - '$text$&a'
+  - '$text$&9&ohttps://www.dropbox.com/s/nsn4g5crrsvxsfr/Random%20Crazy%20Creepers.zip?dl=1'
+  - '$text$&b'
+  - '$text$&7[&3Info&7]'
+  - '$text$&7Makes creepers play a random sound before explodeing.'
+  - '$text$&7As of 12/29/2017 there are 64 sounds that can be played.'
+  - '$text$&b'
+  - '$text$&7Last update: &e12/29/2017'
+  - '$text$&7Minecraft Version: &e1.11'
+  - '$text$&b'
+  - '$text$&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-&b-&9-'
+  permission-error: "&9[&2&lJ&6&lT&9]: &cYou do not have permissions to use this command."
+  permission-required: false
+  register: false
+
+### 9-18-27-36-45-54... (63-90 works also, but the gui is broken.)
+
+resourcepacks_notfound:
+  command: /resourcepacks_notfound
+  type: RUN_CONSOLE
+  runcmd:
+  - /execute as $player at @s run playsound minecraft:block.note_block.pling master @s ~ ~ ~ 0.8 0.65
+  - /execute as $player at @s run playsound minecraft:block.note_block.pling master @s ~ ~ ~ 0.8 0.652
+  - '$text$&9[&2&lJ&6&lT&9]: &cSorry, that resource pack could not be found...'
+
+  delaytimer: 3
+  delaytimer_format: TICKS
+  permission-error: "&9[&2&lJ&6&lT&9]: &cYou do not have permissions to use this command."
+  permission-required: false
+  register: false
