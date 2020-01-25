@@ -1,0 +1,2 @@
+tellraw @a {"text":"The server is no longer running on battery backup.","color":"gray"}
+tellraw @a {"text":"There is currently a power outage, the server is running on battery backup.","color":"gray"}

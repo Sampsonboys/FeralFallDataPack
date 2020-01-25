@@ -1,0 +1,23 @@
+{
+  "pools": [
+    {
+      "rolls": {
+        "min": 0,
+        "max": 1
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:paper",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Chilly Paperwork\",\"color\":\"aqua\",\"italic\":false}',Lore:['{\"text\":\" \"}','{\"text\":\"\u00a73[Info]\"}','{\"text\":\"\u00a77A snowman\\'s unfinished work\"}','{\"text\":\" \"}','{\"text\":\"\u00a79[\u00a72\u00a7lJosh\u00a76\u00a7ltiger \u00a7b\u00a7lPack\u00a79]\"}']},CustomModelData:54}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

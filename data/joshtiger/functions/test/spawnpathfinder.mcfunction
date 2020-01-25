@@ -1,0 +1,1 @@
+summon husk ~ ~ ~ {PersistenceRequired:1b,Health:1f,Tags:["PathFinder"],Attributes:[{Name:generic.maxHealth,Base:1},{Name:generic.followRange,Base:800}]}
