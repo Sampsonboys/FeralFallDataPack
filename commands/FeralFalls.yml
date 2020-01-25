@@ -15,9 +15,9 @@ Warpa:
   command: /Warpa
   type: RUN_CONSOLE
   runcmd:
-  - /execute as @a[name=$player,tag=RulesAccepted] at @s run function joshtiger:commands/-warpa/warpa
-  - /execute as @a[name=$player,tag=!RulesAccepted] at @s run tellraw @s {"text":"&9[&2&lJ&6&lT&9] &cPlease read the rules.","color":"red"}
-  - $delay$/execute as @a[name=$player,tag=RulesAccepted] at @s run function joshtiger:casteffect/1
+  - /execute as @s[tag=RulesAccepted] run function joshtiger:commands/-warpa/warpa #cut some fat; runs the warpa command as usual
+  - /execute as @s[tag=!RulesAccepted] run tellraw @s {"text":"&f[&5&lJIMBO&f] &cDo /rules to advance.","color":"red"} #cut some fat, gives an error if rules not yet accepted.
+  - $delay$/execute as @s[tag=RulesAccepted] run function joshtiger:casteffect/1 #cut some fat.
 
   delaytimer: 1
   delaytimer_format: TICKS
