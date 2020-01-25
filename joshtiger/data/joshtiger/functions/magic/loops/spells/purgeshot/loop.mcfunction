@@ -1,0 +1,1 @@
+function joshtiger:magic/loops/spells/purgeshot/purgeshot

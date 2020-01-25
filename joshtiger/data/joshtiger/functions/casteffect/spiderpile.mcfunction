@@ -1,0 +1,22 @@
+###############################################################
+#                                                             #
+#                      Script created by                      #
+#                                                             #
+#                          joshtiger                          #
+#                                                             #
+###############################################################
+
+summon cave_spider ~0.1 ~ ~ {DeathLootTable:"empty",Health:1f,Tags:["Spider","JTentity"],ActiveEffects:[{Id:18b,Amplifier:1b,Duration:999999,ShowParticles:0b}],Attributes:[{Name:generic.maxHealth,Base:1},{Name:generic.followRange,Base:100},{Name:generic.attackDamage,Base:-5}]}
+summon cave_spider ~ ~ ~0.1 {DeathLootTable:"empty",Health:1f,Tags:["Spider","JTentity"],ActiveEffects:[{Id:18b,Amplifier:1b,Duration:999999,ShowParticles:0b}],Attributes:[{Name:generic.maxHealth,Base:1},{Name:generic.followRange,Base:100},{Name:generic.attackDamage,Base:-5}]}
+summon cave_spider ~-0.1 ~ ~ {DeathLootTable:"empty",Health:1f,Tags:["Spider","JTentity"],ActiveEffects:[{Id:18b,Amplifier:1b,Duration:999999,ShowParticles:0b}],Attributes:[{Name:generic.maxHealth,Base:1},{Name:generic.followRange,Base:100},{Name:generic.attackDamage,Base:-5}]}
+summon cave_spider ~ ~ ~-0.1 {DeathLootTable:"empty",Health:1f,Tags:["Spider","JTentity"],ActiveEffects:[{Id:18b,Amplifier:1b,Duration:999999,ShowParticles:0b}],Attributes:[{Name:generic.maxHealth,Base:1},{Name:generic.followRange,Base:100},{Name:generic.attackDamage,Base:-5}]}
+summon cave_spider ~ ~ ~ {DeathLootTable:"empty",Health:1f,Tags:["Spider","JTentity"],ActiveEffects:[{Id:18b,Amplifier:1b,Duration:999999,ShowParticles:0b}],Attributes:[{Name:generic.maxHealth,Base:1},{Name:generic.followRange,Base:100},{Name:generic.attackDamage,Base:-5}]}
+summon cave_spider ~ ~ ~ {DeathLootTable:"empty",Health:1f,Tags:["Spider","JTentity"],ActiveEffects:[{Id:18b,Amplifier:1b,Duration:999999,ShowParticles:0b}],Attributes:[{Name:generic.maxHealth,Base:1},{Name:generic.followRange,Base:100},{Name:generic.attackDamage,Base:-5}]}
+summon cave_spider ~ ~ ~ {DeathLootTable:"empty",Health:1f,Tags:["Spider","JTentity"],ActiveEffects:[{Id:18b,Amplifier:1b,Duration:999999,ShowParticles:0b}],Attributes:[{Name:generic.maxHealth,Base:1},{Name:generic.followRange,Base:100},{Name:generic.attackDamage,Base:-5}]}
+summon cave_spider ~ ~ ~ {DeathLootTable:"empty",Health:1f,Tags:["Spider","JTentity"],ActiveEffects:[{Id:18b,Amplifier:1b,Duration:999999,ShowParticles:0b}],Attributes:[{Name:generic.maxHealth,Base:1},{Name:generic.followRange,Base:100},{Name:generic.attackDamage,Base:-5}]}
+summon cave_spider ~ ~ ~ {DeathLootTable:"empty",Health:1f,Tags:["Spider","JTentity"],ActiveEffects:[{Id:18b,Amplifier:1b,Duration:999999,ShowParticles:0b}],Attributes:[{Name:generic.maxHealth,Base:1},{Name:generic.followRange,Base:100},{Name:generic.attackDamage,Base:-5}]}
+summon cave_spider ~ ~ ~ {DeathLootTable:"empty",Health:1f,Tags:["Spider","JTentity"],ActiveEffects:[{Id:18b,Amplifier:1b,Duration:999999,ShowParticles:0b}],Attributes:[{Name:generic.maxHealth,Base:1},{Name:generic.followRange,Base:100},{Name:generic.attackDamage,Base:-5}]}
+summon cave_spider ~ ~ ~ {DeathLootTable:"empty",Health:1f,Tags:["Spider","JTentity"],ActiveEffects:[{Id:18b,Amplifier:1b,Duration:999999,ShowParticles:0b}],Attributes:[{Name:generic.maxHealth,Base:1},{Name:generic.followRange,Base:100},{Name:generic.attackDamage,Base:-5}]}
+summon cave_spider ~ ~ ~ {DeathLootTable:"empty",Health:1f,Tags:["Spider","JTentity"],ActiveEffects:[{Id:18b,Amplifier:1b,Duration:999999,ShowParticles:0b}],Attributes:[{Name:generic.maxHealth,Base:1},{Name:generic.followRange,Base:100},{Name:generic.attackDamage,Base:-5}]}
+summon cave_spider ~ ~ ~ {DeathLootTable:"empty",Health:1f,Tags:["Spider","JTentity"],ActiveEffects:[{Id:18b,Amplifier:1b,Duration:999999,ShowParticles:0b}],Attributes:[{Name:generic.maxHealth,Base:1},{Name:generic.followRange,Base:100},{Name:generic.attackDamage,Base:-5}]}
+summon cave_spider ~ ~ ~ {DeathLootTable:"empty",Health:1f,Tags:["Spider","JTentity"],ActiveEffects:[{Id:18b,Amplifier:1b,Duration:999999,ShowParticles:0b}],Attributes:[{Name:generic.maxHealth,Base:1},{Name:generic.followRange,Base:100},{Name:generic.attackDamage,Base:-5}]}

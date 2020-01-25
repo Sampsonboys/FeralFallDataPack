@@ -1,0 +1,714 @@
+  
+texture:
+  command: /texture
+  type: ALIAS
+  alias: /textures
+  permission-required: false
+
+textures:
+  command: /textures
+  type: ICON_MENU
+  iconmenu_title: '&8&l180 &9&lCustom Textures'
+  iconmenu_size: 9
+  iconmenu_commands:
+  - '0:DIAMOND_SWORD:0:/openswordtextures:&9&lSwords:&bClick to show sword textures.;&7[Textures] 30'
+  - '1:DIAMOND_PICKAXE:0:/opentoolstextures:&9&lTools:&bClick to show tool textures.;&7[Textures] ?'
+  - '2:DIAMOND_CHESTPLATE:0:/openarmortextures:&9&lArmors:&bClick to show armor textures.;&7[Textures] 48'
+  - '3:BOW:0:/openbowtextures:&9&lBows:&bClick to show bow textures.;&7[Textures] 11'
+  - '4:ELYTRA:0:/openelytratextures:&9&lElytras:&bClick to show elytra textures.;&7[Textures] 12'
+  - '5:APPLE:0:/openfoodtextures:&9&lFoods:&bClick to show food textures. &6OuO;&7[Textures] 27'
+  - '7:PAPER:0:/opensettextures:&9&lSets:&bClick to show texture sets.;&7[Textures] ?'
+  - '8:PAPER:0:/openplayertextures:&9&lRequested Textures:&bTextures requested by other players.'
+
+  cost: 0
+  permission-error: "&9[&2&lJ&6&lT&9]: &cMeep, you do not have the permission for this. o3o"
+  permission-required: false
+  register: true
+  
+openswordtextures:
+  command: /openswordtextures
+  type: RUN_CONSOLE
+  runcmd:
+  - /execute as $player at @s run playsound jt.gui.click19 master @s ~ ~ ~ 0.8 0.5
+  - $delay$/mycmd-runas player $player /swordtextures
+
+  delaytimer: 3
+  delaytimer_format: TICKS
+  permission-required: false
+
+opensettextures:
+  command: /opensettextures
+  type: RUN_CONSOLE
+  runcmd:
+  - /execute as $player at @s run playsound jt.gui.click20 master @s ~ ~ ~ 0.8 0
+  - $delay$/mycmd-runas player $player /settextures
+  - /execute as $player at @s run playsound jt.gui.click22 master @s ~ ~ ~ 0.8 0.8
+
+  delaytimer: 3
+  delaytimer_format: TICKS
+  permission-required: false
+
+openbowtextures:
+  command: /openbowtextures
+  type: RUN_CONSOLE
+  runcmd:
+  - /execute as $player at @s run playsound jt.gui.click8 master @s ~ ~ ~ 0.8 0.55
+  - $delay$/mycmd-runas player $player /bowtextures
+
+  delaytimer: 3
+  delaytimer_format: TICKS
+  permission-required: false
+
+openpickaxetextures:
+  command: /openpickaxetextures
+  type: RUN_CONSOLE
+  runcmd:
+  - /execute as $player at @s run playsound jt.gui.click19 master @s ~ ~ ~ 0.8 0.8
+  - $delay$/mycmd-runas player $player /pickaxetextures
+
+  delaytimer: 3
+  delaytimer_format: TICKS
+  permission-required: false
+
+openplayertextures:
+  command: /openplayertextures
+  type: RUN_CONSOLE
+  runcmd:
+  - /execute as $player at @s run playsound jt.gui.click20 master @s ~ ~ ~ 0.8 0
+  - $delay$/mycmd-runas player $player /playertextures
+  - /execute as $player at @s run playsound jt.gui.click22 master @s ~ ~ ~ 0.8 0
+
+  delaytimer: 3
+  delaytimer_format: TICKS
+  permission-required: false
+
+openswordtextures2:
+  command: /openswordtextures2
+  type: RUN_CONSOLE
+  runcmd:
+  - /execute as $player at @s run playsound jt.gui.click19 master @s ~ ~ ~ 0.8 0.58
+  - $delay$/mycmd-runas player $player /swordtextures2
+
+  delaytimer: 3
+  delaytimer_format: TICKS
+  permission-required: false
+  
+openfoodtextures:
+  command: /openfoodtextures
+  type: RUN_CONSOLE
+  runcmd:
+  - /execute as $player at @s run playsound jt.sound.nom master @s ~ ~ ~ 0.75 1.25
+  - $delay$/mycmd-runas player $player /foodtextures
+
+  delaytimer: 3
+  delaytimer_format: TICKS
+  permission-required: false
+
+ 
+opentoolstextures:
+  command: /opentoolstextures
+  type: RUN_CONSOLE
+  runcmd:
+  - /execute as $player at @s run playsound jt.gui.click13 master @s ~ ~ ~ 0.8 0.6
+  - $delay$/mycmd-runas player $player /tooltextures
+
+  delaytimer: 3
+  delaytimer_format: TICKS
+  permission-required: false
+  
+opentextures:
+  command: /opentextures
+  type: RUN_CONSOLE
+  runcmd:
+  - /execute as $player at @s run playsound jt.gui.click21 master @s ~ ~ ~ 0.8 0
+  - $delay$/mycmd-runas player $player /textures
+  - /execute as $player at @s run playsound jt.gui.click22 master @s ~ ~ ~ 0.8 0.75
+
+  delaytimer: 3
+  delaytimer_format: TICKS
+  permission-required: false
+
+opentextures0:
+  command: /opentextures0
+  type: RUN_CONSOLE
+  runcmd:
+  - /execute as $player at @s run playsound jt.gui.click22 master @s ~ ~ ~ 0.8 0
+  - '$text$&9[&2&lJ&6&lT&9]: &cUnable to find the page, returning to menu. OnO'
+  - $delay$/mycmd-runas player $player /textures
+  - /execute as $player at @s run playsound jt.gui.click22 master @s ~ ~ ~ 0.8 0
+
+  delaytimer: 3
+  delaytimer_format: TICKS
+  permission-required: false
+
+openelytratextures:
+  command: /openelytratextures
+  type: RUN_CONSOLE
+  runcmd:
+  - /execute as $player at @s run playsound jt.gui.click3 master @s ~ ~ ~ 0.8 0
+  - $delay$/mycmd-runas player $player /elytratextures
+
+  delaytimer: 3
+  delaytimer_format: TICKS
+  permission-required: false
+
+openarmortextures:
+  command: /openarmortextures
+  type: RUN_CONSOLE
+  runcmd:
+  - /execute as $player at @s run playsound jt.gui.click13 master @s ~ ~ ~ 0.8 0
+  - $delay$/mycmd-runas player $player /armortextures
+
+  delaytimer: 3
+  delaytimer_format: TICKS
+  permission-required: false
+  
+openarmortextures2:
+  command: /openarmortextures2
+  type: RUN_CONSOLE
+  runcmd:
+  - /execute as $player at @s run playsound jt.gui.click13 master @s ~ ~ ~ 0.8 0.6
+  - $delay$/mycmd-runas player $player /armortextures2
+
+  delaytimer: 3
+  delaytimer_format: TICKS
+  permission-required: false
+
+
+settextures:
+  command: /settextures
+  type: ICON_MENU
+  iconmenu_title: '&a&lSet Textures'
+  iconmenu_size: 54
+  iconmenu_commands:
+  - '0:PAPER:0:/customtextureinfo4:&a&lRainbow Set:&7[Textures] 9; &7- Rainbow Helmet; &7- Rainbow Chestplate; &7- Rainbow Leggings; &7- Rainbow Boots; &7- Rainbow Sword; &7- Rainbow Bow; &7- Rainbow Pickaxe; &7- Rainbow Hoe; &7- Rainbow Elytra'
+  - '1:PAPER:0:/customtextureinfo4:&a&lCandy Set:&7[Textures] 11; &7- Candy Helmet; &7- Candy Chestplate; &7- Candy Leggings; &7- Candy Boots; &7- Candy Sword; &7- Candycane Sword; &7- Candy Shovel; &7- Candy Axe; &7- Candy Hoe; &7- Candy Pickaxe'
+  - '51:PAPER:0:/opentextures:&7&lBack:&bClick to go back a page.'
+  - '52:PAPER:0:/opentextures:&b&lMenu:&bClick to go back to menu.'
+  - '53:PAPER:0:/opentextures:&7&lNext:&bClick to go to the next page.'
+
+  permission-error: "&9[&2&lJ&6&lT&9]: &cMeep, you do not have the permission for this. o3o"
+  permission-required: false
+  register: false
+
+swordtextures:
+  command: /swordtextures
+  type: ICON_MENU
+  iconmenu_title: '&9&lCustom Sword Textures'
+  iconmenu_size: 54
+  iconmenu_commands:
+  - '0:DIAMOND_SWORD:0:/customtextureinfo:Red Sword:&9Obtained by &aRenameing'
+  - '1:DIAMOND_SWORD:0:/customtextureinfo:Orange Sword:&9Obtained by &aRenameing'
+  - '2:DIAMOND_SWORD:0:/customtextureinfo:Yellow Sword:&9Obtained by &aRenameing'
+  - '3:DIAMOND_SWORD:0:/customtextureinfo:Lime Sword:&9Obtained by &aRenameing'
+  - '4:DIAMOND_SWORD:0:/customtextureinfo:Green Sword:&9Obtained by &aRenameing'
+  - '5:DIAMOND_SWORD:0:/customtextureinfo:Blue Sword:&9Obtained by &aRenameing'
+  - '6:DIAMOND_SWORD:0:/customtextureinfo:Aqua Sword:&9Obtained by &aRenameing'
+  - '7:DIAMOND_SWORD:0:/customtextureinfo:Pink Sword:&9Obtained by &aRenameing'
+  - '8:DIAMOND_SWORD:0:/customtextureinfo:Purple Sword:&9Obtained by &aRenameing'
+  - '9:DIAMOND_SWORD:0:/customtextureinfo:Magic Sword:&9Obtained by &aRenameing'
+  - '10:DIAMOND_SWORD:0:/customtextureinfo:Sparky Sword:&9Obtained by &aRenameing'
+  - '11:DIAMOND_SWORD:0:/customtextureinfo:Pumpkin Sword:&9Obtained by &aRenameing'
+  - '12:DIAMOND_SWORD:0:/customtextureinfo:Dark Sword:&9Obtained by &aRenameing'
+  - '13:DIAMOND_SWORD:0:/customtextureinfo:Robo Sword:&9Obtained by &aRenameing'
+  - '14:DIAMOND_SWORD:0:/customtextureinfo:Soft Sword:&9Obtained by &aRenameing'
+  - '15:DIAMOND_SWORD:0:/customtextureinfo:Dirt Sword:&9Obtained by &aRenameing'
+  - '16:DIAMOND_SWORD:0:/customtextureinfo:Ghostly Sword:&9Obtained by &aRenameing'
+  - '17:DIAMOND_SWORD:0:/customtextureinfo:Strange Sword:&9Obtained by &aRenameing'
+  - '18:DIAMOND_SWORD:0:/customtextureinfo:Rainbow Sword:&9Obtained by &aRenameing'
+  - '19:DIAMOND_SWORD:0:/customtextureinfo:Sharpy:&9Obtained by &aRenameing'
+  - '20:DIAMOND_SWORD:0:/customtextureinfo:Outlined Sword:&9Obtained by &aRenameing'
+  - '21:DIAMOND_SWORD:0:/customtextureinfo:Cyber Sword:&9Obtained by &aRenameing'
+  - '22:DIAMOND_SWORD:0:/customtextureinfo:Static Sword:&9Obtained by &aRenameing'
+  - '23:DIAMOND_SWORD:0:/customtextureinfo:Ugly Sword:&9Obtained by &aRenameing'
+  - '24:DIAMOND_SWORD:0:/customtextureinfo:Nub Sword:&9Obtained by &aRenameing'
+  - '25:DIAMOND_SWORD:0:/customtextureinfo:Calamo Sword:&9Obtained by &aRenameing'
+  - '26:DIAMOND_SWORD:0:/customtextureinfo:Pix Sword:&9Obtained by &aRenameing'
+  - '27:DIAMOND_SWORD:0:/customtextureinfo:Madness Sword:&9Obtained by &aRenameing'
+  - '28:DIAMOND_SWORD:0:/customtextureinfo:Candycane Sword:&9Obtained by &aRenameing'
+  - '29:DIAMOND_SWORD:0:/customtextureinfo:Disco Sword:&9Obtained by &aRenameing'
+  - '30:PAPER:0:/customtextureinfo0:&7Unknown:&9Obtained by &7???'
+  - '31:PAPER:0:/customtextureinfo0:&7Unknown:&9Obtained by &7???'
+  - '32:PAPER:0:/customtextureinfo0:&7Unknown:&9Obtained by &7???'
+  - '33:PAPER:0:/customtextureinfo0:&7Unknown:&9Obtained by &7???'
+  - '34:PAPER:0:/customtextureinfo0:&7Unknown:&9Obtained by &7???'
+  - '35:PAPER:0:/customtextureinfo0:&7Unknown:&9Obtained by &7???'
+  - '36:PAPER:0:/customtextureinfo0:&7Unused space:&6Just an unused space. OuO'
+  - '37:PAPER:0:/customtextureinfo0:&7Unused space:&6This space is unused. OuO'
+  - '38:PAPER:0:/customtextureinfo0:&7Unused space:&6Wow, an used space! OuO'
+  - '39:PAPER:0:/customtextureinfo0:&7Unused space:&6Oh look, a unused space! OuO'
+  - '40:PAPER:0:/customtextureinfo0:&7Unused space:&6I love cookies OuO'
+  - '41:PAPER:0:/customtextureinfo0:&7Unused space:&6This space is pointless. OuO'
+  - '42:PAPER:0:/customtextureinfo0:&7Unused space:&6Weeee pointless space! OuO'
+  - '43:PAPER:0:/customtextureinfo0:&7Unused space:&6So... how are you doing? OuO'
+  - '44:PAPER:0:/customtextureinfo0:&7Unused space:&6Are you going to read every space? OuO'
+  - '50:PAPER:0:/customtextureinfo0:&7Unused space:&6Just another unused space. OuO'
+  - '51:PAPER:0:/opentextures0:&7&lBack:&bClick to go back a page.'
+  - '52:PAPER:0:/opentextures:&b&lMenu:&bClick to go back to menu.'
+  - '53:PAPER:0:/openswordtextures2:&a&lNext:&bClick to go to the next page.'
+
+  permission-error: "&9[&2&lJ&6&lT&9]: &cMeep, you do not have the permission for this. o3o"
+  permission-required: false
+  register: false
+
+swordtextures2:
+  command: /swordtextures2
+  type: ICON_MENU
+  iconmenu_title: '&9&lCustom Sword Textures'
+  iconmenu_size: 54
+  iconmenu_commands:
+  - '0:DIAMOND_SWORD:0:/customtexturesettypeinfo:Dagger:&3&lType Set;&9Obtained by &aRenameing;&7[TextureTypes] 5; &7- Dagger(Wooden); &7- Dagger(Stone); &7- Dagger(Iron); &7- Dagger(Golden); &7- Dagger(Diamond)'
+  - '1:IRON_SWORD:0:/customtexturesettypeinfo:Rusty Dagger:&9Obtained by &aRenameing;&9a &7Iron Sword&9.'
+  - '36:PAPER:0:/customtextureinfo0:&7Unused space:&6Hi x3'
+  - '37:PAPER:0:/customtextureinfo0:&7Unused space:&6So uhhh... how are you?'
+  - '38:PAPER:0:/customtextureinfo0:&7Unused space:&6Are you really going to read;&6all of these messages? x3'
+  - '39:PAPER:0:/customtextureinfo0:&7Unused space:&6I talked to an apple once. o3o'
+  - '40:PAPER:0:/customtextureinfo0:&7Unused space:&6...Cake is, well... good. ouo'
+  - '41:PAPER:0:/customtextureinfo0:&7Unused space:&6&lAHHHHHHH!!! OnO'
+  - '42:PAPER:0:/customtextureinfo0:&7Unused space:&6Hmmm, what to do... x3'
+  - '43:PAPER:0:/customtextureinfo0:&7Unused space:&6Oh uhhh, hi? o.o'
+  - '44:PAPER:0:/justdoit2:&7Unused space:&6Oooo heyy, click meee!;I dare you! Ou-'
+  - '50:PAPER:0:/customtextureinfo0:&7Unused space:&6Careful with any pillows.'
+  - '51:PAPER:0:/openswordtextures:&c&lBack:&bClick to go back a page.'
+  - '52:PAPER:0:/opentextures:&b&lMenu:&bClick to go back to menu.'
+  - '53:PAPER:0:/opentextures0:&7&lNext:&cNo next page.'
+
+  permission-error: "&9[&2&lJ&6&lT&9]: &cMeep, you do not have the permission for this. o3o"
+  permission-required: false
+  register: false
+
+foodtextures:
+  command: /foodtextures
+  type: ICON_MENU
+  iconmenu_title: '&9&lCustom Food Textures'
+  iconmenu_size: 54
+  iconmenu_commands:
+  - '0:COOKIE:0:/customtextureinfo:Sugar cookie:&9Obtained by &aRenameing;&bRename a cookie &6OuO'
+  - '1:COOKIE:0:/customtextureinfo:Pizza:&9Obtained by &aRenameing;&bRename a cookie &6OuO'
+  - '2:COOKIE:0:/customtextureinfo:Hotdog:&9Obtained by &aRenameing;&bRename a cookie &6OuO'
+  - '3:COOKIE:0:/customtextureinfo:Burger:&9Obtained by &aRenameing;&bRename a cookie &6OuO'
+  - '4:COOKIE:0:/customtextureinfo:Cheeseburger:&9Obtained by &aRenameing;&bRename a cookie &6OuO'
+  - '5:COOKIE:0:/customtextureinfo:Sugar donut:&9Obtained by &aRenameing;&bRename a cookie &6OuO'
+  - '6:COOKIE:0:/customtextureinfo:Chocolate donut:&9Obtained by &aRenameing;&bRename a cookie &6OuO'
+  - '7:COOKIE:0:/customtextureinfo:Donut sprinkles:&9Obtained by &aRenameing;&bRename a cookie &6OuO'
+  - '8:COOKIE:0:/customtextureinfo:Chocolate Icecream:&9Obtained by &aRenameing;&bRename a cookie &6OuO'
+  - '9:COOKIE:0:/customtextureinfo:Coffee Icecream:&9Obtained by &aRenameing;&bRename a cookie &6OuO'
+  - '10:COOKIE:0:/customtextureinfo:Strawberry Icecream:&9Obtained by &aRenameing;&bRename a cookie &6OuO'
+  - '11:COOKIE:0:/customtextureinfo:Candybar:&9Obtained by &aRenameing;&bRename a cookie &6OuO'
+  - '12:COOKIE:0:/customtextureinfo:Butter:&9Obtained by &aRenameing;&bRename a cookie &6OuO'
+  - '13:COOKIE:0:/customtextureinfo:Strawberry bar:&9Obtained by &aRenameing;&bRename a cookie &6OuO'
+  - '14:COOKIE:0:/customtextureinfo:Muffin:&9Obtained by &aRenameing;&bRename a cookie &6OuO'
+  - '15:COOKIE:0:/customtextureinfo:Pancake:&9Obtained by &aRenameing;&bRename a cookie &6OuO'
+  - '16:COOKIE:0:/customtextureinfo:Chocolate pancake:&9Obtained by &aRenameing;&bRename a cookie &6OuO'
+  - '17:COOKIE:0:/customtextureinfo:Waffle:&9Obtained by &aRenameing;&bRename a cookie &6OuO'
+  - '18:COOKIE:0:/customtextureinfo:Chocolate waffle:&9Obtained by &aRenameing;&bRename a cookie &6OuO'
+  - '19:COOKIE:0:/customtextureinfo:Bacon:&9Obtained by &aRenameing;&bRename a cookie &6OuO'
+  - '20:COOKIE:0:/customtextureinfo:Bagel:&9Obtained by &aRenameing;&bRename a cookie &6OuO'
+  - '21:COOKIE:0:/customtextureinfo:Chocolate bar:&9Obtained by &aRenameing;&bRename a cookie &6OuO'
+  - '22:COOKIE:0:/customtextureinfo:Strawberry chocolate bar:&9Obtained by &aRenameing;&bRename a cookie &6OuO'
+  - '23:COOKIE:0:/customtextureinfo:Dark chocolate bar:&9Obtained by &aRenameing;&bRename a cookie &6OuO'
+  - '24:COOKIE:0:/customtextureinfo:Dark strawberry chocolate bar:&9Obtained by &aRenameing;&bRename a cookie &6OuO'
+  - '25:COOKIE:0:/customtextureinfo:Chocolate apple:&9Obtained by &aRenameing;&bRename a cookie &6OuO'
+  - '26:COOKIE:0:/customtextureinfo:Candy sword:&9Obtained by &aRenameing;&bRename a cookie &6OuO'
+  - '27:COOKIE:0:/customtextureinfo:Tomato:&9Obtained by &aRenameing;&bRename a cookie &6OuO'
+  - '28:COOKIE:0:/customtextureinfo:Can:&9Obtained by &aRenameing;&bRename a cookie &6OuO'
+
+  - '36:PAPER:0:/customtextureinfo0:&7Unused space:&6Just an unused space. OuO'
+  - '37:PAPER:0:/customtextureinfo0:&7Unused space:&6This space is unused. OuO'
+  - '38:PAPER:0:/customtextureinfo0:&7Unused space:&6Wow, an used space! OuO'
+  - '39:PAPER:0:/customtextureinfo0:&7Unused space:&6Oh look, a unused space! OuO'
+  - '40:PAPER:0:/customtextureinfo0:&7Unused space:&6I love cookies OuO'
+  - '41:PAPER:0:/customtextureinfo0:&7Unused space:&6This space is pointless. OuO'
+  - '42:PAPER:0:/customtextureinfo0:&7Unused space:&6Weeee pointless space! OuO'
+  - '43:PAPER:0:/customtextureinfo0:&7Unused space:&6So... how are you doing? OuO'
+  - '44:PAPER:0:/customtextureinfo0:&7Unused space:&6Are you going to read every space? OuO'
+  - '50:PAPER:0:/customtextureinfo0:&7Unused space:&6Just another unused space. OuO'
+  - '51:PAPER:0:/opentextures0:&7&lBack:&cNo page yet'
+  - '52:PAPER:0:/opentextures:&b&lMenu:&bClick to go back to menu.'
+  - '53:PAPER:0:/opentextures0:&7&lNext:&cNo page yet'
+
+  permission-error: "&9[&2&lJ&6&lT&9]: &cMeep, you do not have the permission for this. o3o"
+  permission-required: false
+  register: false
+  
+bowtextures:
+  command: /bowtextures
+  type: ICON_MENU
+  iconmenu_title: '&9&lCustom Bow Textures'
+  iconmenu_size: 54
+  iconmenu_commands:
+  - '0:BOW:0:/customtextureinfo:Red:&9Obtained by &aRenameing'
+  - '1:BOW:0:/customtextureinfo:Orange:&9Obtained by &aRenameing'
+  - '2:BOW:0:/customtextureinfo:Yellow:&9Obtained by &aRenameing'
+  - '3:BOW:0:/customtextureinfo:Green:&9Obtained by &aRenameing'
+  - '4:BOW:0:/customtextureinfo:Blue:&9Obtained by &aRenameing'
+  - '5:BOW:0:/customtextureinfo:Aqua:&9Obtained by &aRenameing'
+  - '6:BOW:0:/customtextureinfo:Pink:&9Obtained by &aRenameing'
+  - '9:BOW:0:/customtextureinfo3:&6Golden Bow:&9Obtained by &eOther;&0&0&1'
+  - '18:BOW:0:/customtextureinfo:Rainbow:&9Obtained by &aRenameing'
+  - '19:BOW:0:/customtextureinfo:Tiger Bow:&9Obtained by &aRenameing'
+  - '20:BOW:0:/customtextureinfo:Blue Tiger Bow:&9Obtained by &aRenameing'
+  - '36:PAPER:0:/customtextureinfo0:&7Unused space:&6Just an unused space. OuO'
+  - '37:PAPER:0:/customtextureinfo0:&7Unused space:&6This space is unused. OuO'
+  - '38:PAPER:0:/customtextureinfo0:&7Unused space:&6Wow, an used space! OuO'
+  - '39:PAPER:0:/customtextureinfo0:&7Unused space:&6Oh look, a unused space! OuO'
+  - '40:PAPER:0:/customtextureinfo0:&7Unused space:&6I love cookies OuO'
+  - '41:PAPER:0:/customtextureinfo0:&7Unused space:&6This space is pointless. OuO'
+  - '42:PAPER:0:/customtextureinfo0:&7Unused space:&6Weeee pointless space! OuO'
+  - '43:PAPER:0:/customtextureinfo0:&7Unused space:&6So... how are you doing? OuO'
+  - '44:PAPER:0:/customtextureinfo0:&7Unused space:&6Are you going to read every space? OuO'
+  - '50:PAPER:0:/customtextureinfo0:&7Unused space:&6Just another unused space. OuO'
+  - '51:PAPER:0:/opentextures0:&7&lBack:&cNo page yet'
+  - '52:PAPER:0:/opentextures:&b&lMenu:&bClick to go back to menu.'
+  - '53:PAPER:0:/opentextures0:&7&lNext:&cNo page yet'
+
+  permission-error: "&9[&2&lJ&6&lT&9]: &cMeep, you do not have the permission for this. o3o"
+  permission-required: false
+  register: false
+
+pickaxetextures:
+  command: /pickaxetextures
+  type: ICON_MENU
+  iconmenu_title: '&9&lCustom Pickaxe Textures'
+  iconmenu_size: 54
+  iconmenu_commands:
+  - '0:DIAMOND_PICKAXE:0:/customtextureinfo:Red:&9Obtained by &aRenameing;&7[Textures] 2; &7- Red; &7- Red2'
+  - '1:DIAMOND_PICKAXE:0:/customtextureinfo:Orange:&9Obtained by &aRenameing;&7[Textures] 2; &7- Orange; &7- Orange2'
+  - '2:DIAMOND_PICKAXE:0:/customtextureinfo:Yellow:&9Obtained by &aRenameing;&7[Textures] 2; &7- Yellow; &7- Yellow2'
+  - '3:DIAMOND_PICKAXE:0:/customtextureinfo:Green:&9Obtained by &aRenameing;&7[Textures] 2; &7- Green; &7- Green2'
+  - '4:DIAMOND_PICKAXE:0:/customtextureinfo:Blue:&9Obtained by &aRenameing;&7[Textures] 2; &7- Blue; &7- Blue2'
+  - '5:DIAMOND_PICKAXE:0:/customtextureinfo:Aqua:&9Obtained by &aRenameing;&7[Textures] 2; &7- Aqua; &7- Aqua2'
+  - '6:DIAMOND_PICKAXE:0:/customtextureinfo:Pink:&9Obtained by &aRenameing;&7[Textures] 2; &7- Pink; &7- Pink2'
+  - '7:DIAMOND_PICKAXE:0:/customtextureinfo:Purple:&9Obtained by &aRenameing;&7[Textures] 2; &7- Purple; &7- Purple2'
+  - '8:DIAMOND_PICKAXE:0:/customtextureinfo:Dark:&9Obtained by &aRenameing;&7[Textures] 2; &7- Dark; &7- Dark2'
+  - '9:DIAMOND_PICKAXE:0:/customtextureinfo:Black:&9Obtained by &aRenameing;&7[Textures] 2; &7- Black; &7- Black2'
+  - '10:DIAMOND_PICKAXE:0:/customtextureinfo:White:&9Obtained by &aRenameing;&7[Textures] 2; &7- White; &7- White2'
+  - '11:DIAMOND_PICKAXE:0:/customtextureinfo:Rainbow:&9Obtained by &aRenameing;&a&lTexture Set'
+  - '18:DIAMOND_PICKAXE:0:/customtextureinfo:Amber Pickaxe:&9Obtained by &aRenameing;&9a &bDIAMOND pickaxe;&a&lTexture Set'
+  - '19:DIAMOND_PICKAXE:0:/customtextureinfo:Emerald Pickaxe:&9Obtained by &aRenameing;&9a &bDIAMOND pickaxe;&a&lTexture Set'
+  - '20:DIAMOND_PICKAXE:0:/customtextureinfo:Amethyst Pickaxe:&9Obtained by &aRenameing;&9a &bDIAMOND pickaxe;&a&lTexture Set'
+  - '21:DIAMOND_PICKAXE:0:/customtextureinfo:Candy Pickaxe:&9Obtained by &aRenameing;&9a &bDIAMOND pickaxe;&a&lTexture Set'
+
+
+  - '51:PAPER:0:/opentextures0:&7&lBack:&cNo page yet'
+  - '52:PAPER:0:/opentextures:&b&lMenu:&bClick to go back to menu.'
+  - '53:PAPER:0:/opentextures0:&7&lNext:&cNo page yet'
+
+  permission-error: "&9[&2&lJ&6&lT&9]: &cMeep, you do not have the permission for this. o3o"
+  permission-required: false
+  register: false
+
+  
+playertextures:
+  command: /playertextures
+  type: ICON_MENU
+  iconmenu_title: '&9&lRequested Textures'
+  iconmenu_size: 54
+  iconmenu_commands:
+  - '0:DIAMOND_SWORD:0:/customtextureinfo:Wooden bat:&9Created by &asilvo'
+  - '1:DIAMOND_SWORD:0:/customtextureinfo:Steel bat:&9Created by &asilvo'
+  - '2:DIAMOND_SWORD:0:/opentextures0:Cookie sword:&9Created by &aSchutter300;&eComing soon!'
+  - '3:DIAMOND_SWORD:0:/opentextures0:Wide sword:&9Created by &aSchutter300;&eComing soon!'
+  - '4:DIAMOND_AXE:0:/opentextures0:Tomahawk:&9Created by &aSchutter300;&eComing soon!'
+  - '36:PAPER:0:/customtextureinfo0:&7Unused space:&6Just an unused space. OuO'
+  - '37:PAPER:0:/customtextureinfo0:&7Unused space:&6This space is unused. OuO'
+  - '38:PAPER:0:/customtextureinfo0:&7Unused space:&6Wow, an used space! OuO'
+  - '39:PAPER:0:/customtextureinfo0:&7Unused space:&6Oh look, a unused space! OuO'
+  - '40:PAPER:0:/customtextureinfo0:&7Unused space:&6I love cookies OuO'
+  - '41:PAPER:0:/customtextureinfo0:&7Unused space:&6This space is pointless. OuO'
+  - '42:PAPER:0:/customtextureinfo0:&7Unused space:&6Weeee pointless space! OuO'
+  - '43:PAPER:0:/customtextureinfo0:&7Unused space:&6So... how are you doing? OuO'
+  - '44:PAPER:0:/customtextureinfo0:&7Unused space:&6Are you going to read every space? OuO'
+  - '46:PAPER:0:/customtextureinfo0:&7Unused space:&6Woah, so cool man. o3o'
+  - '45:PAPER:0:/requesttextureinfo:&9&lSubmit Custom Texture:&b&oClick here to submit a texture.'
+  - '50:PAPER:0:/customtextureinfo0:&7Unused space:&6Just another unused space. OuO'
+  - '51:PAPER:0:/openplayertextures:&7&lBack:&bClick to go back a page.'
+  - '52:PAPER:0:/opentextures:&b&lMenu:&bClick to go back to menu.'
+  - '53:PAPER:0:/openplayertextures:&7&lNext:&bClick to go to the next page.'
+
+  permission-error: "&9[&2&lJ&6&lT&9]: &cMeep, you do not have the permission for this. o3o"
+  permission-required: false
+  register: false
+ 
+tooltextures:
+  command: /tooltextures
+  type: ICON_MENU
+  iconmenu_title: '&9&lTool Textures'
+  iconmenu_size: 9
+  iconmenu_commands:
+  - '0:DIAMOND_PICKAXE:0:/openpickaxetextures:&9&lPickaxes:&bClick to show pickaxe textures.;&7[Textures] 24'
+  - '1:DIAMOND_AXE:0:/opentextures0:&9&lAxes:&cNot ready yet.;&7[Textures] 0'
+  - '2:DIAMOND_SPADE:0:/opentextures0:&9&lShovels:&cNot ready yet.;&7[Textures] 0'
+  - '3:DIAMOND_HOE:0:/opentextures0:&9&lHoes:&cAlso not ready yet. o3o;&7[Textures] 0'
+
+
+  permission-error: "&9[&2&lJ&6&lT&9]: &cMeep, you do not have the permission for this. o3o"
+  permission-required: false
+  register: true
+  
+elytratextures:
+  command: /elytratextures
+  type: ICON_MENU
+  iconmenu_title: '&9&lElytra Textures'
+  iconmenu_size: 54
+  iconmenu_commands:
+  - '0:ELYTRA:0:/customtextureinfo:Red:&9Obtained by &aRenameing'
+  - '1:ELYTRA:0:/customtextureinfo:Orange:&9Obtained by &aRenameing'
+  - '2:ELYTRA:0:/customtextureinfo:Yellow:&9Obtained by &aRenameing'
+  - '3:ELYTRA:0:/customtextureinfo:Green:&9Obtained by &aRenameing'
+  - '4:ELYTRA:0:/customtextureinfo:Aqua:&9Obtained by &aRenameing'
+  - '5:ELYTRA:0:/customtextureinfo:Blue:&9Obtained by &aRenameing'
+  - '6:ELYTRA:0:/customtextureinfo:Purple:&9Obtained by &aRenameing'
+  - '7:ELYTRA:0:/customtextureinfo:Pink:&9Obtained by &aRenameing'
+  - '8:ELYTRA:0:/customtextureinfo:Rainbow:&9Obtained by &aRenameing'
+  - '9:ELYTRA:0:/customtextureinfo2:&f&oThis looks pretty &e&osand&f&oy:&9Include the &eKeyWorld'
+  - '10:ELYTRA:0:/customtextureinfo2:&f&oIt is &e&owooden &f&olike a tree:&9Include the &eKeyWorld'
+  - '11:ELYTRA:0:/customtextureinfo2:&f&oSo &e&omagic&f&oal...:&9Include the &eKeyWorld'
+  - '51:PAPER:0:/opentextures0:&7&lBack:&bClick to go back a page.'
+  - '52:PAPER:0:/opentextures:&b&lMenu:&bClick to go back to menu.'
+  - '53:PAPER:0:/opentextures0:&7&lNext:&bClick to go to the next page.'
+
+
+  permission-error: "&9[&2&lJ&6&lT&9]: &cMeep, you do not have the permission for this. o3o"
+  permission-required: false
+  register: true
+  
+armortextures:
+  command: /armortextures
+  type: ICON_MENU
+  iconmenu_title: '&9&lArmor Textures'
+  iconmenu_size: 54
+  iconmenu_commands:
+  - '0:DIAMOND_HELMET:0:/customtextureinfo:Red:&9Obtained by &aRenameing &bDIAMOND Armor'
+  - '1:DIAMOND_HELMET:0:/customtextureinfo:Orange:&9Obtained by &aRenameing &bDIAMOND Armor'
+  - '2:DIAMOND_HELMET:0:/customtextureinfo:Yellow:&9Obtained by &aRenameing &bDIAMOND Armor'
+  - '3:DIAMOND_HELMET:0:/customtextureinfo:Green:&9Obtained by &aRenameing &bDIAMOND Armor'
+  - '4:DIAMOND_HELMET:0:/customtextureinfo:Aqua:&9Obtained by &aRenameing &bDIAMOND Armor'
+  - '5:DIAMOND_HELMET:0:/customtextureinfo:Blue:&9Obtained by &aRenameing &bDIAMOND Armor'
+  - '6:DIAMOND_HELMET:0:/customtextureinfo:Purple:&9Obtained by &aRenameing &bDIAMOND Armor'
+  - '7:DIAMOND_HELMET:0:/customtextureinfo:Pink:&9Obtained by &aRenameing &bDIAMOND Armor'
+  - '8:DIAMOND_HELMET:0:/customtextureinfo:Black:&9Obtained by &aRenameing &bDIAMOND Armor'
+  - '9:DIAMOND_CHESTPLATE:0:/customtextureinfo:Red:&9Obtained by &aRenameing &bDIAMOND Armor'
+  - '10:DIAMOND_CHESTPLATE:0:/customtextureinfo:Orange:&9Obtained by &aRenameing &bDIAMOND Armor'
+  - '11:DIAMOND_CHESTPLATE:0:/customtextureinfo:Yellow:&9Obtained by &aRenameing &bDIAMOND Armor'
+  - '12:DIAMOND_CHESTPLATE:0:/customtextureinfo:Green:&9Obtained by &aRenameing &bDIAMOND Armor'
+  - '13:DIAMOND_CHESTPLATE:0:/customtextureinfo:Aqua:&9Obtained by &aRenameing &bDIAMOND Armor'
+  - '14:DIAMOND_CHESTPLATE:0:/customtextureinfo:Blue:&9Obtained by &aRenameing &bDIAMOND Armor'
+  - '15:DIAMOND_CHESTPLATE:0:/customtextureinfo:Purple:&9Obtained by &aRenameing &bDIAMOND Armor'
+  - '16:DIAMOND_CHESTPLATE:0:/customtextureinfo:Pink:&9Obtained by &aRenameing &bDIAMOND Armor'
+  - '17:DIAMOND_CHESTPLATE:0:/customtextureinfo:Black:&9Obtained by &aRenameing &bDIAMOND Armor'
+  - '18:DIAMOND_LEGGINGS:0:/customtextureinfo:Red:&9Obtained by &aRenameing &bDIAMOND Armor'
+  - '19:DIAMOND_LEGGINGS:0:/customtextureinfo:Orange:&9Obtained by &aRenameing &bDIAMOND Armor'
+  - '20:DIAMOND_LEGGINGS:0:/customtextureinfo:Yellow:&9Obtained by &aRenameing &bDIAMOND Armor'
+  - '21:DIAMOND_LEGGINGS:0:/customtextureinfo:Green:&9Obtained by &aRenameing &bDIAMOND Armor'
+  - '22:DIAMOND_LEGGINGS:0:/customtextureinfo:Aqua:&9Obtained by &aRenameing &bDIAMOND Armor'
+  - '23:DIAMOND_LEGGINGS:0:/customtextureinfo:Blue:&9Obtained by &aRenameing &bDIAMOND Armor'
+  - '24:DIAMOND_LEGGINGS:0:/customtextureinfo:Purple:&9Obtained by &aRenameing &bDIAMOND Armor'
+  - '25:DIAMOND_LEGGINGS:0:/customtextureinfo:Pink:&9Obtained by &aRenameing &bDIAMOND Armor'
+  - '26:DIAMOND_LEGGINGS:0:/customtextureinfo:Black:&9Obtained by &aRenameing &bDIAMOND Armor'
+  - '27:DIAMOND_BOOTS:0:/customtextureinfo:Red:&9Obtained by &aRenameing &bDIAMOND Armor'
+  - '28:DIAMOND_BOOTS:0:/customtextureinfo:Orange:&9Obtained by &aRenameing &bDIAMOND Armor'
+  - '29:DIAMOND_BOOTS:0:/customtextureinfo:Yellow:&9Obtained by &aRenameing &bDIAMOND Armor'
+  - '30:DIAMOND_BOOTS:0:/customtextureinfo:Green:&9Obtained by &aRenameing &bDIAMOND Armor'
+  - '31:DIAMOND_BOOTS:0:/customtextureinfo:Aqua:&9Obtained by &aRenameing &bDIAMOND Armor'
+  - '32:DIAMOND_BOOTS:0:/customtextureinfo:Blue:&9Obtained by &aRenameing &bDIAMOND Armor'
+  - '33:DIAMOND_BOOTS:0:/customtextureinfo:Purple:&9Obtained by &aRenameing &bDIAMOND Armor'
+  - '34:DIAMOND_BOOTS:0:/customtextureinfo:Pink:&9Obtained by &aRenameing &bDIAMOND Armor'
+  - '35:DIAMOND_BOOTS:0:/customtextureinfo:Black:&9Obtained by &aRenameing &bDIAMOND Armor'
+  - '51:PAPER:0:/opentextures:&7&lBack:&bClick to go back a page.'
+  - '52:PAPER:0:/opentextures:&b&lMenu:&bClick to go back to menu.'
+  - '53:PAPER:0:/openarmortextures2:&a&lNext:&bClick to go to the next page.'
+
+  permission-error: "&9[&2&lJ&6&lT&9]: &cMeep, you do not have the permission for this. o3o"
+  permission-required: false
+  register: true
+  
+armortextures2:
+  command: /armortextures2
+  type: ICON_MENU
+  iconmenu_title: '&9&lCustom Armor Textures'
+  iconmenu_size: 54
+  iconmenu_commands:
+  - '0:DIAMOND_HELMET:0:/customtextureinfo:Rainbow:&9Obtained by &aRenameing &bDIAMOND Armor'
+  - '1:DIAMOND_HELMET:0:/customtextureinfo:Green Slime:&9Obtained by &aRenameing &bDIAMOND Armor'
+  - '2:DIAMOND_HELMET:0:/customtextureinfo:Invisible:&9Obtained by &aRenameing &bDIAMOND Armor'
+  - '3:PAPER:0:/customtextureinfo0:&7Unknown:&9Obtained by &7???'
+  - '4:PAPER:0:/customtextureinfo0:&7Unknown:&9Obtained by &7???'
+  - '5:PAPER:0:/customtextureinfo0:&7Unknown:&9Obtained by &7???'
+  - '6:PAPER:0:/customtextureinfo0:&7Unknown:&9Obtained by &7???'
+  - '7:PAPER:0:/customtextureinfo0:&7Unknown:&9Obtained by &7???'
+  - '8:PAPER:0:/customtextureinfo0:&7Unknown:&9Obtained by &7???'
+  - '9:DIAMOND_CHESTPLATE:0:/customtextureinfo:Rainbow:&9Obtained by &aRenameing &bDIAMOND Armor'
+  - '10:DIAMOND_CHESTPLATE:0:/customtextureinfo:Green Slime:&9Obtained by &aRenameing &bDIAMOND Armor'
+  - '11:DIAMOND_CHESTPLATE:0:/customtextureinfo:Invisible:&9Obtained by &aRenameing &bDIAMOND Armor'
+  - '12:PAPER:0:/customtextureinfo0:&7Unknown:&9Obtained by &7???'
+  - '13:PAPER:0:/customtextureinfo0:&7Unknown:&9Obtained by &7???'
+  - '14:PAPER:0:/customtextureinfo0:&7Unknown:&9Obtained by &7???'
+  - '15:PAPER:0:/customtextureinfo0:&7Unknown:&9Obtained by &7???'
+  - '16:PAPER:0:/customtextureinfo0:&7Unknown:&9Obtained by &7???'
+  - '17:PAPER:0:/customtextureinfo0:&7Unknown:&9Obtained by &7???'
+  - '18:DIAMOND_LEGGINGS:0:/customtextureinfo:Rainbow:&9Obtained by &aRenameing &bDIAMOND Armor'
+  - '19:DIAMOND_LEGGINGS:0:/customtextureinfo:Green Slime:&9Obtained by &aRenameing &bDIAMOND Armor'
+  - '20:DIAMOND_LEGGINGS:0:/customtextureinfo:Invisible:&9Obtained by &aRenameing &bDIAMOND Armor'
+  - '21:PAPER:0:/customtextureinfo0:&7Unknown:&9Obtained by &7???'
+  - '22:PAPER:0:/customtextureinfo0:&7Unknown:&9Obtained by &7???'
+  - '23:PAPER:0:/customtextureinfo0:&7Unknown:&9Obtained by &7???'
+  - '24:PAPER:0:/customtextureinfo0:&7Unknown:&9Obtained by &7???'
+  - '25:PAPER:0:/customtextureinfo0:&7Unknown:&9Obtained by &7???'
+  - '26:PAPER:0:/customtextureinfo0:&7Unknown:&9Obtained by &7???'
+  - '27:DIAMOND_BOOTS:0:/customtextureinfo:Rainbow:&9Obtained by &aRenameing &bDIAMOND Armor'
+  - '28:DIAMOND_BOOTS:0:/customtextureinfo:Green Slime:&9Obtained by &aRenameing &bDIAMOND Armor'
+  - '29:DIAMOND_BOOTS:0:/customtextureinfo:Invisible:&9Obtained by &aRenameing &bDIAMOND Armor'
+  - '30:PAPER:0:/customtextureinfo0:&7Unknown:&9Obtained by &7???'
+  - '31:PAPER:0:/customtextureinfo0:&7Unknown:&9Obtained by &7???'
+  - '32:PAPER:0:/customtextureinfo0:&7Unknown:&9Obtained by &7???'
+  - '33:PAPER:0:/customtextureinfo0:&7Unknown:&9Obtained by &7???'
+  - '34:PAPER:0:/customtextureinfo0:&7Unknown:&9Obtained by &7???'
+  - '35:PAPER:0:/customtextureinfo0:&7Unknown:&9Obtained by &7???'
+  - '51:PAPER:0:/openarmortextures:&4&lBack:&bClick to go back a page.'
+  - '52:PAPER:0:/opentextures:&b&lMenu:&bClick to go back to menu.'
+  - '53:PAPER:0:/openarmortextures2:&7&lNext:&cNo 3rd page.'
+
+  permission-error: "&9[&2&lJ&6&lT&9]: &cMeep, you do not have the permission for this. o3o"
+  permission-required: false
+  register: true
+  
+customtextureinfo:
+  command: /customtextureinfo
+  type: RUN_CONSOLE
+  runcmd:
+  - /execute as $player at @s run playsound gamez.beep.11 master $player ~ ~ ~ 5 1.2
+  - '$text$&9[&2&lJ&6&lT&9]: &bTo get this custom texture, rename the item in an anvil to the same name of the custom texture.'
+  - '$text$&9'
+  - '$text$&eNote: You will need the server resource pack, via &b/pack'
+  - '$text$&eand Optifine running to see the custom item textures.'
+  - '$text$&9'
+
+  permission-error: "&9[&2&lJ&6&lT&9]: &cYou do not have permissions to use this command."
+  permission-required: false
+  register: false
+  
+customtextureinfo2:
+  command: /customtextureinfo2
+  type: RUN_CONSOLE
+  runcmd:
+  - /execute as $player at @s run playsound gamez.beep.11 master $player ~ ~ ~ 5 1.2
+  - '$text$&9[&2&lJ&6&lT&9]: &bTo get this custom texture, rename the item in an anvil and include the &eKeyWord &bto get the custom texture.'
+  - '$text$&9'
+  - '$text$&6Example, renameing the Elytra to &6"&f&oDeserts are &e&osand&f&oy&6" or like &6"&f&oThere is &e&osand&f&o in my shoe&6" will make it appear as sand.'
+
+  permission-error: "&9[&2&lJ&6&lT&9]: &cYou do not have permissions to use this command."
+  permission-required: false
+  register: false
+  
+customtextureinfo0:
+  command: /customtextureinfo0
+  type: RUN_CONSOLE
+  runcmd:
+  - /execute as $player at @s run playsound gamez.beep.11 master $player ~ ~ ~ 5 1.2
+  - '$text$&9[&2&lJ&6&lT&9]: &7This is an unknown item or may not yet exist.'
+
+  permission-error: "&9[&2&lJ&6&lT&9]: &cYou do not have permissions to use this command."
+  permission-required: false
+  register: false
+  
+customtextureinfo3:
+  command: /customtextureinfo3
+  type: RUN_CONSOLE
+  runcmd:
+  - /execute as $player at @s run playsound gamez.beep.11 master $player ~ ~ ~ 5 1.2
+  - '$text$&9[&2&lJ&6&lT&9]: &7This item may be obtained in an event or something like that.'
+
+  permission-error: "&9[&2&lJ&6&lT&9]: &cYou do not have permissions to use this command."
+  permission-required: false
+  register: false
+
+customtextureinfo4:
+  command: /customtextureinfo4
+  type: RUN_CONSOLE
+  runcmd:
+  - /execute as $player at @s run playsound gamez.beep.11 master $player ~ ~ ~ 5 1.2
+  - '$text$&9[&2&lJ&6&lT&9]: &9Rename mostly any Tool/Armor/Weapon to Obtaine it'
+  - '$text$&aSets &9are pretty much a collection of those type of textures.'
+  - '$text$&a'
+
+  permission-error: "&9[&2&lJ&6&lT&9]: &cYou do not have permissions to use this command."
+  permission-required: false
+  register: false
+
+customtexturesettypeinfo:
+  command: /customtexturesettypeinfo
+  type: RUN_CONSOLE
+  runcmd:
+  - /execute as $player at @s run playsound gamez.beep.11 master $player ~ ~ ~ 5 1.2
+  - '$text$&9[&2&lJ&6&lT&9]: &9A &3&lSet Type &9means that you will get types of texture depending what it is.'
+  - '$text$&9So like renameing a stone_sword to "&f&oDagger&9" will get you a stone dagger.'
+  - '$text$&a'
+
+  permission-error: "&9[&2&lJ&6&lT&9]: &cYou do not have permissions to use this command."
+  permission-required: false
+  register: false
+
+guiexit:
+  command: /guiexit
+  type: RUN_CONSOLE
+  runcmd:
+  - /execute as $player at @s run playsound gamez.beep.11 master $player ~ ~ ~ 5 1.5
+
+  permission-error: "&9[&2&lJ&6&lT&9]: &cYou do not have permissions to use this command."
+  permission-required: false
+  register: false
+  
+pagenotfound:
+  command: /pagenotfound
+  type: RUN_CONSOLE
+  runcmd:
+  - /execute as $player at @s run playsound gamez.beep.17 master $player ~ ~ ~ 5 0.7
+  - '$text$&9[&2&lJ&6&lT&9]: &cThis page could not be found.'
+
+  permission-error: "&9[&2&lJ&6&lT&9]: &cYou do not have permissions to use this command."
+  permission-required: false
+  register: false
+
+requesttextureinfo:
+  command: /requesttextureinfo
+  type: RUN_CONSOLE
+  runcmd:
+  - /execute as $player at @s run playsound gamez.beep.11 master $player ~ ~ ~ 5 1.2
+  - '$text$&9'
+  - '$text$&9[&2&lJ&6&lT&9]: &6Yesh, you can send in your own item textures for the pack owo'
+  - '$text$&9'
+  - '$text$&b/requesttexture &e[ItemType] &a[ItemName] &c[MatchName] &9&oImageLink'
+  - '$text$&9'
+  - '$text$&6Sooo like &b/requesttexture &eSword &aSparky_sword &cFalse &9&ohttps://i.imgur.com/p1qYR1p.png'
+  - '$text$&eUse &2_ &ein the ItemName for a space, like &aSparky_sword &ewould come out as &aSparky sword'
+  - '$text$&9'
+  - '$text$&cMatchName &7Means that the item needs to be named exactly the name to get the texture to show.'
+  - '$text$&7So like &cMatchName &7being &aTrue&7, "sparky sword" will not work, but "Sparky sword" will.'
+  - '$text$&9'
+
+  permission-error: "&9[&2&lJ&6&lT&9]: &cYou do not have permissions to use this command."
+  permission-required: false
+  register: false
+  
+requesttexture:
+  command: /requesttexture
+  type: RUN_CONSOLE
+  runcmd:
+  - /mail send joshtiger &a$player &erequested a &e$arg1 &etype texture named &a$arg2&e, &cMatchName &f$arg3 &eLink &9$arg4
+  - '$text$&9[&2&lJ&6&lT&9]: &bCustom &e$arg1 &btexture nammed &a$arg2 &brequest was sent!'
+  - '$text$&9'
+  - '$text$&eItemType: &7$arg1'
+  - '$text$&aItemName: &7$arg2'
+  - '$text$&cMatchName: &7$arg3'
+  - '$text$&9ImageLink: &9&o$arg4'
+  - '$text$&9'
+  - '$text$&eNote: You would need to have optifine to see the custom texture in the resource pack.'
+  - '$text$&eYou can get the servers resource pack by doing &b/pack'
+  - '$text$&9'
+
+  required_args: 4
+  permission-error: "&9[&2&lJ&6&lT&9]: &cYou do not have permissions to use this command."
+  permission-required: false
+  error-message: "&9[&2&lJ&6&lT&9]: &b/requesttexture &e[ItemType] &a[ItemName] &c[MatchName] &9ImageLink"
+  register: true

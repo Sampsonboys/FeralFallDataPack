@@ -1,0 +1,168 @@
+fakedeathnote:
+  command: /fakedeathnote
+  type: RUN_CONSOLE
+  runcmd:
+
+  - /execute as $player at @s run tellraw @a ["",{"selector":"@s"},{"text":" $multiargs"}]
+  - /execute as $player at @s unless entity @s[gamemode=spectator] run playsound minecraft:entity.player.hurt player @a
+  - gamemode 3 $player
+
+  
+  delaytimer: 25
+  delaytimer_format: TICKS
+  permission-error: "&9[&2&lJ&6&lT&9]: &cYou do not have permissions to use this command."
+  permission-required: true
+  permission-node: joshtiger.fakedeathnote
+  register: true
+  
+hide:
+  command: /hide
+  type: RUN_CONSOLE
+  runcmd:
+  - /tellraw @a[tag=JTCMDLOG] {"text":"&e[&2§lJ&6§lT&e] &a$player &eused &b/Hide&e."}
+  - /execute as $player at @s run effect give @s minecraft:invisibility 99999 90 true
+  - /execute as $player at @s run playsound gamez.beep.11 master $player ~ ~ ~ 5 1
+  - '$text$&9[&2&lJ&6&lT&9]: &bYou have been given full invisibility effect.'
+
+  permission-error: "&9[&2&lJ&6&lT&9]: &cSorrryyyy."
+  permission-required: true
+  permission-node: joshtiger.hide
+  register: true
+  
+bright:
+  command: /bright
+  type: RUN_CONSOLE
+  runcmd:
+  - /tellraw @a[tag=JTCMDLOG] {"text":"&e[&2§lJ&6§lT&e] &a$player &eused &b/Bright&e."}
+  - /execute as $player at @s run playsound gamez.beep.11 master $player ~ ~ ~ 5 1
+  - /effect clear $player minecraft:night_vision
+  - /effect give $player minecraft:night_vision 999999 0 true
+  - '$text$&9[&2&lJ&6&lT&9]: &bLet there be light ouo'
+
+  permission-error: "&9[&2&lJ&6&lT&9]: &cHeyyyy, this command is too bright for you! O.O &7(Invalid Permissions)"
+  permission-required: true
+  permission-node: joshtiger.bright
+  register: true
+
+whoaccepted:
+  command: /whoaccepted
+  type: RUN_CONSOLE
+  runcmd:
+  - /tellraw @a[tag=JTCMDLOG] {"text":"&e[&2§lJ&6§lT&e] &a$player &eused &b/WhoAccepted&e."}
+  - '$text$&c '
+  - '$text$&c[&2&lJ&6&lT&c]: &bListing players rules status'
+  - /tellraw @a[tag=IsStaff,name=$player] {"text":"&a[Accepted the rules]"}
+  - /execute as @a[tag=RulesAccepted] at @s run tellraw @a[tag=IsStaff,name=$player] [{"selector":"@s","color":"dark_green"}]
+  - /tellraw @a[tag=IsStaff,name=$player] {"text":" "}
+  - /tellraw @a[tag=IsStaff,name=$player] {"text":"&c[Did not accept the rules yet]"}
+  - /execute as @a[tag=!RulesAccepted] at @s run tellraw @a[tag=IsStaff,name=$player] [{"selector":"@s","color":"dark_red"}]
+  - '$text$&c '
+  - /execute as $player at @s run playsound gamez.beep.11 master $player ~ ~ ~ 5 1
+  permission-error: "&9[&2&lJ&6&lT&9]: &cHeyyyy, your no admin, go eat a cookie. OuO &7(Invalid Permissions)"
+  permission-required: true
+  permission-node: joshtiger.whoaccepted
+  register: true
+
+Nametag:
+  command: /Nametag
+  type: RUN_CONSOLE
+  runcmd:
+  - /execute as $player at @s run playsound minecraft:entity.evocation_illager.cast_spell master @a ~ ~ ~ 1 1.4
+  - /minecraft:give $player minecraft:name_tag{display:{Name:"{\"text\":\"$multiargs\"}",Lore:["","&7Created with &b/NameTag","&7Spawned by &a$player","","&7-Status while spawning-","&4Health &e$health","&6Food &e$food","&aLevel &e$level","&2Biome &e$biome","","&6Spawned on $todaydate",""]}} 1
+
+  permission-required: true
+  permission-error: "&9[&2&lJ&6&lT&9]: &cNuuuu, you do not have permission for this thingy! O.O"
+  error-message: "&9[&2&lJ&6&lT&9]: &b/Nametag &a[Text]"
+  success-message: "&aYou wrote a nametag!"
+  required_args: 1
+  register: true
+  
+reportbug:
+  command: /reportbug
+  type: RUN_CONSOLE
+  runcmd:
+  - /mail send joshtiger &9[&3Bug&9] &7<&a$player&7> &3$multiargs
+  - '$text$&9[&2&lJ&6&lT&9]: &aThanks! the bug report has been sent to tiger land! OwO'
+  - '$text$&9'
+  - '$text$&aUsername: &7$player'
+  - '$text$&bMessage: &b"&3$multiargs&b"'
+  - '$text$&9'
+
+  required_args: 1
+  permission-error: "&9[&2&lJ&6&lT&9]: &cYou do not have permissions to use this command."
+  permission-required: false
+  error-message: "&9[&2&lJ&6&lT&9]: &b/ReportBug &a[Message] &e- Report a buggy bug. OnO"
+  register: true
+  
+TimeOnServer:
+  command: /TimeOnServer
+  type: RUN_CONSOLE
+  runcmd:
+  - /execute as $player at @s run playsound gamez.beep.11 master @s ~ ~ ~ 5 1.2
+  - '$text$&a'
+  - '$text$&aDisplaying players time on server.'
+  - '$text$&9Scripted by: &2josh&6tiger'
+  - '$text$&a'
+  - /execute as $player at @s run tellraw $player ["",{"selector":"@s","color":"gold"},{"text":" ","color":"none"},{"score":{"name":"@s","objective":"TimeOnServer"},"color":"green"},{"text":" (Seconds)","color":"gray"}]
+  - /execute as @a[gamemode=!spectator,name=!$player,tag=!Vanished] run tellraw $player ["",{"selector":"@s","color":"dark_green"},{"text":" ","color":"none"},{"score":{"name":"@s","objective":"TimeOnServer"},"color":"green"},{"text":" (Seconds)","color":"gray"}]
+  - '$text$&a'
+  - /execute as $player at @s run tellraw @s[tag=IsStaff] [{"text":"§9Eligible for §2Member §9- ","color":"dark_green"},{"selector":"@a[scores={TimeOnServer=36000..}]","color":"green"}]
+  - /execute as $player at @s run tellraw @s[tag=IsStaff] [{"text":"§9Eligible for §2Member§6+ §9- ","color":"gold"},{"selector":"@a[scores={TimeOnServer=518400..}]","color":"aqua"}]
+  - '$text$&a'
+  - '$text$&a10 Hours = &7(36000 seconds)'
+  - '$text$&a6 Days = &7(518400 seconds)'
+  - '$text$&a'
+  permission-error: "&cError: This command is offline."
+  permission-required: false
+  register: true
+  
+fakelogin:
+  command: /fakelogin
+  type: RUN_CONSOLE
+  runcmd:
+  - /execute as $player at @s run tellraw @a [{"selector":"@s","color":"yellow"},{"text":" joined the game","color":"yellow"}]
+  - /sudo $player vanish disable
+  - '$text$&9[&2&lJ&6&lT&9]: &bYou have logged in fakely. :3'
+
+  permission-error: "&9[&2&lJ&6&lT&9]: &cYou do not have permissions to use this command."
+  permission-required: true
+  permission-node: joshtiger.fakelogin
+  register: true
+  
+fakelogout:
+  command: /fakelogout
+  type: RUN_CONSOLE
+  runcmd:
+  - /execute as $player at @s run tellraw @a [{"text":"$player left the game","color":"yellow"}]
+  - /sudo $player vanish enable
+  - '$text$&9[&2&lJ&6&lT&9]: &bYou have been logged out fakely. :3'
+
+  permission-error: "&9[&2&lJ&6&lT&9]: &cYou do not have permissions to use this command."
+  permission-required: true
+  permission-node: joshtiger.fakelogout
+  register: true
+  
+fakeafk:
+  command: /fakeafk
+  type: RUN_CONSOLE
+  runcmd:
+  - '$text$&9[&2&lJ&6&lT&9]: &bFake afking o3o'
+  - '$text$&9  &7(Players still can see when your in GM 3 on Tab though.)'
+  - '$broadcasttext$&7* $getdisplayname &7is now AFK.'
+
+  permission-error: "&9[&2&lJ&6&lT&9]: &cYou do not have permissions to use this command."
+  permission-required: true
+  permission-node: joshtiger.fakeafk
+  register: true
+  
+fakeunafk:
+  command: /fakeunafk
+  type: RUN_CONSOLE
+  runcmd:
+  - '$text$&9[&2&lJ&6&lT&9]: &bFake unafking ouo'
+  - '$broadcasttext$&7* $getdisplayname &7is no longer AFK.'
+
+  permission-error: "&9[&2&lJ&6&lT&9]: &cYou do not have permissions to use this command."
+  permission-required: true
+  permission-node: joshtiger.fakeunafk
+  register: true

@@ -1,0 +1,422 @@
+
+dnd:
+  command: /dnd
+  type: RUN_CONSOLE
+  runcmd:
+  - '$broadcasttext$&9[&2&lJ&6&lT&9]: &7[&a$player&7] &3Rolled a &a&l$randomnumber%20%'
+  - $delay$/execute as @a at @s run playsound minecraft:block.stone.break player @p ~ ~ ~ 0.2 2
+  - $delay$/execute as @a at @s run playsound minecraft:block.stone.break player @p ~ ~ ~ 0.2 1.7
+  - $delay$/execute as @a at @s run playsound minecraft:block.stone.break player @p ~ ~ ~ 0.2 1.2
+  - $delay$/execute as @a at @s run playsound minecraft:block.stone.break player @p ~ ~ ~ 0.2 1.5
+
+  delaytimer: 1
+  cooldown: 10
+  delaytimer_format: TICKS
+
+  permission-error: "&9[&2&lJ&6&lT&9]: &cYou do not have permissions to use this command."
+  permission-required: false
+  register: true
+  
+suwuicide:
+  command: /sUwUicide
+  type: RUN_CONSOLE
+  runcmd:
+  - /title $player times 100 60 5
+  - /title $player title {"text":"§b-w-"}
+  - $delay$/title $player times 0 60 60
+  - /title $player title {"text":"§dUwU"}
+  - /effect give $player minecraft:slowness 1 90 true
+  - /execute as $player at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 5 0.6
+  - /execute as $player at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 5 0.61
+  - /execute as $player at @s run playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 5 0.62
+  - /execute as $player at @s run playsound minecraft:block.note_block.harp master @s ~ ~ ~ 5 0.62
+  - /execute as $player at @s run playsound minecraft:block.note_block.pling master @s ~ ~ ~ 5 0.62
+  - /execute as $player at @s run gamerule showDeathMessages false
+  - /execute as $player at @s run kill @s
+  - /execute as $player at @s run tellraw @a [{"selector":"@s"},{"text":" was effected by the face of §d§lUwU§f...","color":"white"}]
+  - /execute as $player at @s run gamerule showDeathMessages true
+
+  delaytimer: 100
+  cooldown: 10
+  delaytimer_format: TICKS
+
+  permission-error: "&9[&2&lJ&6&lT&9]: &cYou do not have permissions to use this command."
+  permission-required: false
+  register: true
+
+bleat:
+  command: /bleat
+  type: RUN_CONSOLE
+  runcmd:
+  - '$broadcasttext$&9[&2&lJ&6&lT&9]: &a&o$player &b&oBleats'
+  - /execute as $player at @s run playsound minecraft:entity.sheep.ambient master @a ~ ~ ~ 1.5 0.75
+
+  permission-error: "&9[&2&lJ&6&lT&9]: &cYou do not have permissions to use this command."
+  permission-required: false
+  register: true
+  
+facepaw:
+  command: /facepaw
+  type: RUN_CONSOLE
+  runcmd:
+  - '$broadcasttext$&9[&5&l&oR&d&l&oP&9]: &5&o*&a&o$player &5&ofacepaws*'
+
+  permission-error: "&9[&2&lJ&6&lT&9]: &cYou do not have permissions to use this command."
+  permission-required: false
+  register: true
+
+randomentity:
+  command: /randomentity
+  type: RUN_CONSOLE
+  runcmd:
+  - /execute as $player at @s run execute as @e[type=!minecraft:armor_stand,sort=random,limit=1] at @s if entity @s[type=!player] run tellraw $player [{"text":"Random entity - ","color":"dark_purple"},{"selector":"@s","color":"green"}]
+  - /execute as $player at @s run execute as @e[type=!minecraft:armor_stand,sort=random,limit=1] at @s if entity @s[type=player] run tellraw $player [{"text":"Random entity - §7§lUNKNOWN_ENTITY","color":"dark_purple"}]
+
+  permission-error: "&9[&2&lJ&6&lT&9]: &cYou do not have permissions to use this command."
+  permission-required: false
+  register: true
+
+heart:
+  command: /heart
+  type: RUN_CONSOLE
+  runcmd:
+  - /execute as $player at @s run particle heart ~ ~2 ~ 0.1 0.1 0.1 0 1 force @a
+
+  permission-error: "&9[&2&lJ&6&lT&9]: &cYou do not have permissions to use this command."
+  permission-required: false
+  register: true
+  
+hearts:
+  command: /hearts
+  type: RUN_CONSOLE
+  runcmd:
+  - /execute as $player at @s run particle heart ~ ~1 ~ 0.5 0.5 0.5 0 5 force @a
+
+  permission-error: "&9[&2&lJ&6&lT&9]: &cYou do not have permissions to use this command."
+  permission-required: false
+  register: true
+
+boof:
+  command: /boof
+  type: RUN_CONSOLE
+  runcmd:
+  - '$broadcasttext$&9[&2&lJ&6&lT&9]: &a&o$player &b&oBoofs'
+
+  permission-error: "&9[&2&lJ&6&lT&9]: &cYou do not have permissions to use this command."
+  permission-required: false
+  register: true
+
+stupider:
+  command: /stupider
+  type: RUN_CONSOLE
+  runcmd:
+  - '$broadcasttext$&9[&2&lJ&6&lT&9]: &a&o$player &b&ois now &5Stupider'
+
+  permission-error: "&9[&2&lJ&6&lT&9]: &cYou do not have permissions to use this command."
+  permission-required: false
+  register: true
+  
+awooo:
+  command: /awooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+  type: RUN_CONSOLE
+  runcmd:
+  - '$broadcasttext$&9[&2&lJ&6&lT&9]: &a&o$player &b&oAwooooooooos!'
+  - '$broadcasttext$&7(&a$&c-200 &cviolation&7)'
+
+  permission-error: "&9[&2&lJ&6&lT&9]: &cYou do not have permissions to use this command."
+  permission-required: false
+  register: true
+
+gulpa:
+  command: /gulpa
+  type: RUN_CONSOLE
+  runcmd:
+  - /execute as $player at @s if entity @e[distance=0..2,type=!minecraft:armor_stand,type=!player,type=!minecraft:item_frame] run tag @s[tag=!Gobbler] add Gobbler
+  - /execute as $player at @s run execute as @e[distance=0..2,type=!minecraft:armor_stand,name=!$player] if entity @s[type=!player] run tp @s @e[tag=JTstomach,limit=1]
+  - /execute as $player at @s run execute as @e[distance=0..2,type=!minecraft:armor_stand,name=!$player] if entity @s[type=player] run tp @s @e[tag=JTgullet,limit=1]
+  - /execute as $player at @s run playsound minecraft:jt.looper.swallow master @a ~ ~ ~ 1 0.8
+  - /execute as $player at @s run playsound minecraft:jt.looper.swallow master @a ~ ~ ~ 1 0.8
+  - /execute as $player at @s run playsound minecraft:jt.looper.swallow master @a ~ ~ ~ 1 0.8
+  - /execute as $player at @s run playsound minecraft:jt.looper.swallow master @a ~ ~ ~ 1 0.8
+
+  permission-error: "&9[&2&lJ&6&lT&9]: &cYou do not have permissions to gobble others."
+  permission-required: true
+  permission-node: joshtiger.gulpa
+  allowed_worlds:
+  - world
+
+gulpaold:
+  command: /gulpaold
+  type: RUN_CONSOLE
+  runcmd:
+  - '$text$&9[&2&lJ&6&lT&9]: &cUnable to run command!'
+  - '$text$&9 - &7(Missing entity minecraft:bee)'
+  - '$text$&9 - &7(Missing function joshtiger:commands/-gulpa/gethpamount)'
+  - '$text$&9 - &7(Missing function joshtiger:commands/-gulpa/digestiontype)'
+  - '$text$&9 '
+  - /execute as $player at @s run playsound minecraft:playsound gamez.beep.17 master @s ~ ~ ~ 1 0.8
+
+  permission-error: "&9[&2&lJ&6&lT&9]: &cYou do not have permissions to use this command."
+  permission-required: true
+  allowed_worlds:
+  - world
+
+spitup:
+  command: /spitup
+  type: RUN_CONSOLE
+  runcmd:
+  - /execute as $player at @s run execute as @e[tag=JTstomach,limit=1] at @s run tp @e[distance=0..8,type=!minecraft:armor_stand] @p[name=$player]
+  - /execute as $player at @s run execute as @e[tag=JTgullet,limit=1] at @s run tp @e[distance=0..8,type=!minecraft:armor_stand] @p[name=$player]
+  - /execute as $player at @s run playsound minecraft:jt.looper.swallow master @a ~ ~ ~ 1 1.8
+  - /execute as $player at @s run playsound minecraft:jt.looper.swallow master @a ~ ~ ~ 1 1.4
+  - /execute as $player at @s run playsound minecraft:jt.looper.swallow master @a ~ ~ ~ 1 1.2
+  - /execute as $player at @s run playsound minecraft:jt.looper.swallow master @a ~ ~ ~ 1 0.8
+  - $delay$/execute as $player at @s if entity @s[tag=Gobbler] run execute as @e[distance=0..1,nbt={NoAI:1b}] at @s run data merge entity @s {NoAI:0b}
+  - /execute as $player at @s run tag @s[tag=Gobbler] remove Gobbler
+
+  delaytimer: 1
+  delaytimer_format: TICKS
+  permission-error: "&9[&2&lJ&6&lT&9]: &cYou do not have permissions to use this command."
+  permission-required: true
+  permission-node: joshtiger.spitup
+  allowed_worlds:
+  - world
+
+  
+bork:
+  command: /bork
+  type: RUN_CONSOLE
+  runcmd:
+  - '$broadcasttext$&9[&2&lJ&6&lT&9]: &a&o$player &b&oBorks'
+
+  permission-error: "&9[&2&lJ&6&lT&9]: &cYou do not have permissions to use this command."
+  permission-required: false
+  register: true
+
+toot:
+  command: /toot
+  type: RUN_CONSOLE
+  runcmd:
+  - /execute as $player at @s unless block ~ ~ ~ minecraft:water run particle poof ~ ~0.55 ~ 0.2 0.2 0.2 0.03 7
+  - /execute as $player at @s unless block ~ ~ ~ minecraft:water run particle cloud ~ ~0.55 ~ 0.2 0.2 0.2 0.0$randomnumber%9% 15
+  - /execute as $player at @s if block ~ ~ ~ minecraft:water run particle bubble ~ ~0.55 ~ 0.2 0.2 0.2 0.03 7
+  - /execute as $player at @s if block ~ ~ ~ minecraft:water run particle bubble ~ ~0.55 ~ 0.2 0.2 0.2 0.0$randomnumber%9% 15
+  - /execute as $player at @s run playsound jt.sound.toot master @a ~ ~ ~ 1 0.$randomnumber%9%
+
+  permission-error: "&9[&2&lJ&6&lT&9]: &cYou do not have permissions to use this command."
+  permission-required: false
+  register: true
+  
+tootloudly:
+  command: /tootloudly
+  type: RUN_CONSOLE
+  runcmd:
+  - /execute as $player at @s unless block ~ ~ ~ minecraft:water run particle poof ~ ~0.55 ~ 0.2 0.2 0.2 0.03 7
+  - /execute as $player at @s unless block ~ ~ ~ minecraft:water run particle cloud ~ ~0.55 ~ 0.2 0.2 0.2 0.0$randomnumber%9% 15
+  - /execute as $player at @s if block ~ ~ ~ minecraft:water run particle bubble ~ ~0.55 ~ 0.2 0.2 0.2 0.03 7
+  - /execute as $player at @s if block ~ ~ ~ minecraft:water run particle bubble ~ ~0.55 ~ 0.2 0.2 0.2 0.0$randomnumber%9% 15
+  - /execute as $player at @s run playsound jt.sound.toot master @a ~ ~ ~ 1 0.$randomnumber%9%
+  - /execute as $player at @s run playsound jt.sound.toot master @a ~ ~ ~ 1 0.$randomnumber%9%
+  - /execute as $player at @s run playsound jt.sound.toot master @a ~ ~ ~ 1 0.$randomnumber%9%
+
+  permission-error: "&9[&2&lJ&6&lT&9]: &cYou do not have permissions to use this command."
+  permission-required: false
+  register: true
+  
+gurgle:
+  command: /gurgle
+  type: RUN_CONSOLE
+  runcmd:
+  - /execute as $player at @s run playsound jt.sound.stomach master @a ~ ~ ~ 1.2 1.$randomnumber%9%
+
+  permission-error: "&9[&2&lJ&6&lT&9]: &cYou do not have permissions to use this command."
+  permission-required: false
+  register: false
+
+skunk:
+  command: /skunk
+  type: RUN_CONSOLE
+  runcmd:
+  - /execute as $player at @s run function joshtiger:castscript/skunk
+
+  permission-error: "&9[&2&lJ&6&lT&9]: &cYou do not have permissions to use this command."
+  permission-required: false
+  register: false
+
+burp:
+  command: /burp
+  type: RUN_CONSOLE
+  runcmd:
+  - /execute as $player at @s run playsound minecraft:entity.player.burp master @a ~ ~ ~ 1.5 0.7
+  - /execute as $player at @s run playsound minecraft:entity.player.burp master @a ~ ~ ~ 1.5 1.2
+  - /execute as $player at @s run playsound minecraft:entity.player.burp master @a ~ ~ ~ 1.5 0.75
+  - /execute as $player at @s run particle poof ~ ~1.5 ~ 0 0 0 0.04 15 force @a
+
+  permission-error: "&9[&2&lJ&6&lT&9]: &cYou do not have permissions to use this command."
+  permission-required: false
+  register: true
+
+oink:
+  command: /oink
+  type: RUN_CONSOLE
+  runcmd:
+  - '$broadcasttext$&9[&2&lJ&6&lT&9]: &a&o$player &b&oOinks'
+
+  permission-error: "&9[&2&lJ&6&lT&9]: &cYou do not have permissions to use this command."
+  permission-required: false
+  register: true
+
+options:
+  command: /options
+  type: RUN_CONSOLE
+  runcmd:
+  - '$text$&9[&2&lJ&6&lT&9]: &2Josh&6tiger: &b"Oh thats not the options button." &d~ 3/17/2019 1:52:29 AM'
+
+  permission-error: "&9[&2&lJ&6&lT&9]: &cYou do not have permissions to use this command."
+  permission-required: false
+  register: true
+  
+blush:
+  command: /blush
+  type: RUN_CONSOLE
+  runcmd:
+  - '$broadcasttext$&9[&2&lJ&6&lT&9]: &a&o$player &b&oblushes'
+
+  permission-error: "&9[&2&lJ&6&lT&9]: &cYou do not have permissions to use this command."
+  permission-required: false
+  register: true
+  
+trumpet:
+  command: /trumpet
+  type: RUN_CONSOLE
+  runcmd:
+  - '$broadcasttext$&9[&2&lJ&6&lT&9]: &a&o$player &b&oplays the trumpet'
+
+  permission-error: "&9[&2&lJ&6&lT&9]: &cYou do not have permissions to use this command."
+  permission-required: false
+  register: true
+  
+squeek:
+  command: /squeek
+  type: RUN_CONSOLE
+  runcmd:
+  - '$broadcasttext$&9[&2&lJ&6&lT&9]: &a&o$player &b&oSqueeks'
+
+  permission-error: "&9[&2&lJ&6&lT&9]: &cYou do not have permissions to use this command."
+  permission-required: false
+  register: true
+  
+squeak:
+  command: /squeak
+  type: RUN_CONSOLE
+  runcmd:
+  - '$broadcasttext$&9[&2&lJ&6&lT&9]: &a&o$player &b&oSqueaks'
+
+  permission-error: "&9[&2&lJ&6&lT&9]: &cYou do not have permissions to use this command."
+  permission-required: false
+  register: true
+  
+floof:
+  command: /floof
+  type: RUN_CONSOLE
+  runcmd:
+  - '$broadcasttext$&9[&2&lJ&6&lT&9]: &a&o$player &b&oFloofs up'
+
+  permission-error: "&9[&2&lJ&6&lT&9]: &cYou do not have permissions to use this command."
+  permission-required: false
+  register: true
+  
+glorp:
+  command: /glorp
+  type: RUN_CONSOLE
+  runcmd:
+  - '$broadcasttext$&9[&2&lJ&6&lT&9]: &a&o$player &b&oglorps'
+
+  permission-error: "&9[&2&lJ&6&lT&9]: &cYou do not have permissions to use this command."
+  permission-required: false
+  register: true
+
+quack:
+  command: /quack
+  type: RUN_CONSOLE
+  runcmd:
+  - '$broadcasttext$&9[&2&lJ&6&lT&9]: &a&o$player &e&oQuacks'
+  - /execute as $player at @s run playsound minecraft:jt.randomness.quack master @a ~ ~ ~ 2 1
+
+  permission-error: "&9[&2&lJ&6&lT&9]: &cYou do not have permissions to use this command."
+  permission-required: false
+  register: true
+
+nod:
+  command: /nod
+  type: RUN_CONSOLE
+  runcmd:
+  - '$broadcasttext$&9[&2&lJ&6&lT&9]: &a&o$player &e&oNods'
+
+  permission-error: "&9[&2&lJ&6&lT&9]: &cYou do not have permissions to use this command."
+  permission-required: false
+  register: true
+
+damnit:
+  command: /damnit
+  type: BROADCAST_TEXT
+  text:
+  - '&7[&a$player&7] &bDamnit...'
+
+  permission-error: "&9[&2&lJ&6&lT&9]: &cYou do not have permissions to use this command."
+  permission-required: false
+
+roll1:
+  command: /roll1
+  type: ALIAS
+  alias: /roll
+  permission-required: false
+
+rpcmdlist:
+  command: /rp
+  type: RUN_CONSOLE
+  runcmd:
+  - /tellraw @a[tag=JTLogger] {"text":"&a[&2J&6T&a] &a$player &eused &b/RP $multiargs&e."}
+  - /execute as $player as @s run playsound tp.sound.saved master @s ~ ~ ~ 5 1
+  - /tellraw $player {"text":"&5-&0-&5-&0-&5-&0-&5-&0-&5-&0-&5-&0-&5-&0-&5-&0-&5-&0-&5-&0-&5-&0-&5-&0-&5-&0-&5-&0-&5-&0-&5-&0-&5-&0-&5-&0-&5-&0-&5-&0-","color":"yellow"}
+  - /tellraw $player {"text":"&5&lDisplaying Roleplay Commands","color":"yellow"}
+  - /tellraw $player {"text":" ","color":"yellow"}
+  - /tellraw $player {"text":"&6/Animal &9- Displays animal stuffs OuO","color":"yellow"}
+  - /tellraw $player {"text":"&b/Floof &9- Floof up! ^u^","color":"yellow"}
+  - /tellraw $player {"text":"&b/dnd &9- Roll from 1 to 20","color":"yellow"}
+  - /tellraw $player {"text":"&b/Facepaw &9- Paw over your face","color":"yellow"}
+  - /tellraw $player {"text":"&b/Heart&9, &b/Hearts &9- Heart particles! <3","color":"yellow"}
+  - /tellraw $player {"text":"&b/Boof &9- Boof boof ouo","color":"yellow"}
+  - /tellraw $player {"text":"&b/Bork &9- Bork bork >u>","color":"yellow"}
+  - /tellraw $player {"text":"&b/Toot &9- Pffffft","color":"yellow"}
+  - /tellraw $player {"text":"&b/burp &9- Buuurp","color":"yellow"}
+  - /tellraw $player {"text":"&b/Trumpet &9- Uhhh play the trumpet?","color":"yellow"}
+  - /tellraw $player {"text":"&b/oink &9- Oink like a pig","color":"yellow"}
+  - /tellraw $player {"text":"&b/Bleat &9- Bleat like a sheep","color":"yellow"}
+  - /tellraw $player {"text":"&b/Squeak &9- Squeak like a mouse","color":"yellow"}
+  - /tellraw $player {"text":"&b/Quack &9- Quack like a duck","color":"yellow"}
+  - /tellraw $player {"text":"&b/blush &9- Blush like uhhh... hmmm","color":"blue"}
+  - /tellraw $player {"text":"&b/Nod &9- Nod your head","color":"yellow"}
+  - /tellraw $player {"text":"&0-&5-&0-&5-&0-&5-&0-&5-&0-&5-&0-&5-&0-&5-&0-&5-&0-&5-&0-&5-&0-&5-&0-&5-&0-&5-&0-&5-&0-&5-&0-&5-&0-&5-&0-&5-&0-&5-&0-&5-","color":"yellow"}
+
+  permission-error: "&9[&2&lJ&6&lT&9]: &cYou do not have permissions to use this command."
+  permission-required: false
+  register: true
+  
+gasterblaster:
+  command: /gasterblaster
+  type: RUN_CONSOLE
+  runcmd:
+  - /execute as $player at @s run function joshtiger:casteffect/3
+
+  permission-error: "&9[&2&lJ&6&lT&9]: &cYou do not have permissions to use this command."
+  permission-required: false
+
+gulp:
+  command: /gulp
+  type: RUN_CONSOLE
+  runcmd:
+  - /execute as $player at @s run function joshtiger:commands/-gulp/gulp
+
+  permission-error: "&9[&2&lJ&6&lT&9]: &cYou do not have permissions to use this command."
+  permission-required: false

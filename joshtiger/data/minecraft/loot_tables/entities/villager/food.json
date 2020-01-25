@@ -1,0 +1,169 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "weight": 45,
+                    "name": "minecraft:apple",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 5
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 50,
+                    "name": "minecraft:bread",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 6
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 20,
+                    "name": "minecraft:cooked_porkchop",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 3
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 32,
+                    "name": "minecraft:cookie",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 5,
+                                "max": 16
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 4,
+                    "name": "minecraft:cake"
+                },
+                {
+                    "type": "item",
+                    "weight": 20,
+                    "name": "minecraft:cooked_beef",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 3
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 15,
+                    "name": "minecraft:cooked_chicken",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 3
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 25,
+                    "name": "minecraft:baked_potato",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 6
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 1,
+                    "name": "minecraft:pumpkin_pie",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 3
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 20,
+                    "name": "minecraft:cooked_rabbit",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 3
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 20,
+                    "name": "minecraft:cooked_mutton",
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 3
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "item",
+                    "weight": 5,
+                    "name": "minecraft:mushroom_stew"
+                },
+                {
+                    "type": "item",
+                    "weight": 3,
+                    "name": "minecraft:rabbit_stew"
+                },
+                {
+                    "type": "item",
+                    "weight": 10,
+                    "name": "minecraft:beetroot_soup"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,1 @@
+execute as @s at @s positioned ~ ~1.45 ~ positioned ^-0.825 ^ ^0.9 run function joshtiger:magic/loops/spells/swordspin/swordspin

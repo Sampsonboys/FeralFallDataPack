@@ -1,0 +1,23 @@
+{
+  "pools": [
+    {
+      "rolls": {
+        "min": 1,
+        "max": 6
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:cooked_porkchop",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"Purple Porkchop\",\"color\":\"dark_purple\",\"italic\":false}',Lore:['{\"text\":\" \"}','{\"text\":\"\u00a77[\u00a73Info\u00a77]\"}','{\"text\":\"A porkchop that is \u00a75Purple \u00a7e:3\",\"color\":\"yellow\",\"italic\":false}','{\"text\":\" \"}','{\"text\":\"\u00a79[\u00a72\u00a7lJosh\u00a76\u00a7ltiger \u00a7b\u00a7lPack\u00a79]\"}','{\"text\":\" \"}']},CustomModelData:20}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
