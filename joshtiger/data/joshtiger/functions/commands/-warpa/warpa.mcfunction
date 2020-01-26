@@ -1,13 +1,7 @@
-###############################################################
-#                                                             #
-#                      Script created by                      #
-#                                                             #
-#                          joshtiger                          #
-#                                                             #
-###############################################################
+#created by JoshTiger, improved by sampsonboys
 
-tellraw @s {"text":"§9[§2§lJosh§6§lTiger§9]: §5Warping somewhere random! ^u^","color":"dark_purple"}
+tellraw @s {"text":"§f[§4§lFeralFalls§f]: §aWarping somewhere random!","color":"green"}
 
 execute as @s run function joshtiger:casteffect/2
-execute as @s run spreadplayers 0 0 5 65000 false @s
+execute as @s run spreadplayers 0 0 5 85000 false @s
 execute as @s run function joshtiger:casteffect/1
